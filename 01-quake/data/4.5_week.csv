@@ -1,0 +1,80 @@
+time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,type,horizontalError,depthError,magError,magNst,status,locationSource,magSource
+2021-10-11T18:25:48.424Z,51.4765,-174.4297,35,4.9,mb,,143,0.824,0.8,us,us6000ftru,2021-10-11T19:21:39.040Z,"81 km S of Atka, Alaska",earthquake,1.8,2,0.035,268,reviewed,us,us
+2021-10-11T17:30:29.810Z,0.8374,126.132,24.97,5,mb,,40,1.236,0.78,us,us6000ftrd,2021-10-11T17:57:47.040Z,"139 km W of Ternate, Indonesia",earthquake,6,4.7,0.06,95,reviewed,us,us
+2021-10-11T15:27:49.072Z,0.8759,126.1488,10,5.1,mb,,32,1.222,0.49,us,us6000ftqr,2021-10-11T16:48:27.926Z,"137 km W of Ternate, Indonesia",earthquake,5.5,1.8,0.054,120,reviewed,us,us
+2021-10-11T12:34:32.285Z,0.8215,126.1888,9.19,5.7,mww,,40,1.178,0.98,us,us6000ftpp,2021-10-11T21:57:46.571Z,"133 km W of Ternate, Indonesia",earthquake,6.8,3.2,0.075,17,reviewed,us,us
+2021-10-11T09:10:24.682Z,56.2584,-156.5532,69.1,6.9,mww,,,,0.71,ak,ak021d1u1nos,2021-10-11T22:11:00.355Z,"114 km E of Chignik, Alaska",earthquake,,0.9,,,reviewed,ak,ak
+2021-10-11T07:45:10.332Z,-7.0554,156.051,79.06,4.5,mb,,100,4.525,0.7,us,us6000ftna,2021-10-11T09:03:58.040Z,"102 km SE of Panguna, Papua New Guinea",earthquake,7.7,4.8,0.09,37,reviewed,us,us
+2021-10-11T03:09:54.588Z,-9.0314,122.3758,97.91,4.9,mb,,40,0.416,0.79,us,us6000ftlq,2021-10-11T03:28:53.040Z,"48 km SSE of Maumere, Indonesia",earthquake,5.4,4.9,0.083,45,reviewed,us,us
+2021-10-11T02:14:50.806Z,-22.3845,-67.4727,194.91,4.6,mb,,78,0.862,0.86,us,us6000ftll,2021-10-11T02:32:18.040Z,"94 km NE of San Pedro de Atacama, Chile",earthquake,9.3,11.7,0.182,9,reviewed,us,us
+2021-10-10T21:48:36.560Z,18.8203333333333,-155.527166666667,35.06,6.21,ml,54,278,,0.12,hv,hv72748782,2021-10-11T22:28:57.067Z,"27 km SSE of Naalehu, Hawaii",earthquake,0.52,0.93,0.153984707746698,25,reviewed,hv,hv
+2021-10-10T16:29:40.826Z,30.4075,94.7766,10,4.7,mb,,73,5.469,0.55,us,us6000ftj2,2021-10-10T17:12:14.040Z,"211 km N of Shi Yomi, India",earthquake,10,1.9,0.11,30,reviewed,us,us
+2021-10-10T16:11:25.625Z,27.4312,55.229,10,4.7,mb,,52,2.626,0.4,us,us6000ftj0,2021-10-10T18:09:07.040Z,"102 km NNE of Bandar-e Lengeh, Iran",earthquake,8.1,1.9,0.063,81,reviewed,us,us
+2021-10-10T16:09:35.333Z,57.8816,-32.7245,10,4.8,mb,,44,7.242,0.43,us,us6000ftj4,2021-10-10T18:31:01.040Z,"Reykjanes Ridge",earthquake,7.1,1.9,0.041,191,reviewed,us,us
+2021-10-10T15:02:41.414Z,30.05,67.9376,10,4.5,mb,,142,4.574,0.64,us,us6000ftip,2021-10-10T16:27:46.281Z,"5 km S of Harnai, Pakistan",earthquake,4.5,1.9,0.105,30,reviewed,us,us
+2021-10-10T14:16:15.906Z,42.3494,143.0581,61.73,4.9,mb,,109,0.342,0.48,us,us6000ftih,2021-10-11T14:17:34.085Z,"56 km E of Shizunai-furukawachō, Japan",earthquake,8,6,0.028,412,reviewed,us,us
+2021-10-10T11:32:36.583Z,3.3673,122.9645,552.46,4.5,mb,,86,3.127,0.63,us,us6000fthq,2021-10-10T11:49:17.040Z,"295 km NW of Manado, Indonesia",earthquake,4.1,9.4,0.072,57,reviewed,us,us
+2021-10-10T09:23:30.258Z,-16.6077,-72.1844,90.09,4.5,mb,,143,2.483,0.48,us,us6000fth3,2021-10-11T01:57:02.812Z,"16 km SW of Santa Rita de Siguas, Peru",earthquake,10.1,13.5,0.145,15,reviewed,us,us
+2021-10-10T05:25:38.776Z,-56.6922,-27.3418,147.93,4.9,mb,,74,5.732,0.8,us,us6000ftgg,2021-10-10T05:45:10.040Z,"South Sandwich Islands region",earthquake,11.9,8.6,0.065,74,reviewed,us,us
+2021-10-10T04:06:20.712Z,-8.7782,-74.6782,138.8,4.6,mb,,108,2.213,0.53,us,us6000ftfu,2021-10-10T04:20:46.040Z,"3 km ESE of Honoria, Peru",earthquake,4.3,8.3,0.054,104,reviewed,us,us
+2021-10-10T01:48:58.110Z,30.3576,94.824,34.87,4.7,mb,,117,5.446,0.68,us,us6000ftez,2021-10-10T02:07:59.040Z,"207 km NNE of Shi Yomi, India",earthquake,11.6,6.2,0.106,29,reviewed,us,us
+2021-10-10T00:20:41.030Z,-11.7378,-71.7073,13.45,5.7,mww,,76,4.102,1.36,us,us6000fteg,2021-10-11T00:24:47.179Z,"127 km NNW of Salvación, Peru",earthquake,5.7,3.3,0.044,50,reviewed,us,us
+2021-10-09T23:33:46.390Z,-21.1246,-68.884,115.42,4.8,mb,,54,0.569,0.84,us,us6000ftea,2021-10-10T03:38:33.492Z,"147 km N of Calama, Chile",earthquake,5.3,5.1,0.044,157,reviewed,us,us
+2021-10-09T20:01:50.856Z,-4.6488,153.0318,52.86,5.5,mww,,27,6.219,1.17,us,us6000ftd2,2021-10-10T20:05:58.651Z,"91 km ESE of Kokopo, Papua New Guinea",earthquake,8.5,4.2,0.062,25,reviewed,us,us
+2021-10-09T17:55:34.258Z,-15.6589,-71.8162,10,4.6,mb,,136,2.949,0.87,us,us6000ftcj,2021-10-09T18:26:04.040Z,"5 km WSW of Maca, Peru",earthquake,10.2,1.9,0.095,33,reviewed,us,us
+2021-10-09T14:31:20.641Z,-15.6781,-72.1257,10,4.5,mb,,171,3.169,1.33,us,us6000ftbc,2021-10-09T16:24:48.040Z,"6 km NNW of Huambo, Peru",earthquake,5.2,1.9,0.156,12,reviewed,us,us
+2021-10-09T13:09:05.698Z,-4.0669,134.0372,10,4.7,mb,,122,2.118,1.05,us,us6000ftat,2021-10-09T13:43:47.040Z,"180 km WSW of Nabire, Indonesia",earthquake,8,1.9,0.158,12,reviewed,us,us
+2021-10-09T10:58:30.852Z,-21.1717,174.5286,520.42,6.9,mww,,31,4.761,0.6,us,us6000ft9g,2021-10-10T09:33:53.327Z,"Vanuatu region",earthquake,5.3,3.8,0.05,38,reviewed,us,us
+2021-10-09T10:39:14.075Z,-4.4957,153.4247,63.15,5.1,mb,,40,1.293,0.96,us,us6000ft9c,2021-10-09T12:00:48.926Z,"129 km E of Kokopo, Papua New Guinea",earthquake,9.1,5.3,0.05,129,reviewed,us,us
+2021-10-09T09:33:12.911Z,15.7385,-92.2117,191.74,4.6,mb,,123,0.545,0.6,us,us6000ft8y,2021-10-10T07:59:41.145Z,"2 km SSW of Nueva Libertad, Mexico",earthquake,8.2,6,0.044,154,reviewed,us,us
+2021-10-09T07:19:27.745Z,50.0361,149.8258,447.74,5.6,mww,,49,5.615,0.82,us,us6000ft86,2021-10-10T07:23:08.143Z,"Sea of Okhotsk",earthquake,8.5,5.9,0.068,21,reviewed,us,us
+2021-10-09T06:54:12.422Z,63.3749,158.3473,10,4.8,mb,,104,5.263,0.62,us,us6000ft7x,2021-10-09T07:12:04.040Z,"161 km NE of Omsukchan, Russia",earthquake,8.6,1.9,0.077,52,reviewed,us,us
+2021-10-09T06:05:32.139Z,32.38,49.7538,10,4.8,mb,,45,4.329,0.65,us,us6000ft7j,2021-10-09T06:21:31.040Z,"64 km NE of Masjed Soleymān, Iran",earthquake,7.6,1.9,0.076,53,reviewed,us,us
+2021-10-09T05:50:11.841Z,-15.5823,-71.6865,10,4.7,mb,,140,2.908,0.85,us,us6000ft78,2021-10-09T06:09:54.040Z,"7 km N of Ichupampa, Peru",earthquake,9.7,1.9,0.083,44,reviewed,us,us
+2021-10-09T05:36:57.197Z,30.3562,94.827,34.55,4.9,mb,,111,5.446,0.48,us,us6000ft7k,2021-10-09T06:17:12.040Z,"207 km NNE of Shi Yomi, India",earthquake,12.3,5.9,0.091,38,reviewed,us,us
+2021-10-09T05:32:00.520Z,40.0948,142.1566,61.6,5,mb,,72,1.084,0.66,us,us6000ft6w,2021-10-09T12:32:00.101Z,"53 km NNE of Miyako, Japan",earthquake,7.3,6.7,0.046,150,reviewed,us,us
+2021-10-09T04:47:50.386Z,-15.5869,-71.8603,24.47,5.6,mww,,115,3.028,1.29,us,us6000ft6j,2021-10-10T04:51:43.281Z,"6 km WNW of Madrigal, Peru",earthquake,5.7,4.7,0.063,24,reviewed,us,us
+2021-10-09T02:47:34.421Z,42.4005,141.9753,92.66,4.6,mb,,75,0.958,0.57,us,us6000ft5x,2021-10-09T03:10:48.491Z,"33 km WNW of Shizunai-furukawachō, Japan",earthquake,5.6,7.1,0.033,273,reviewed,us,us
+2021-10-08T23:16:26.459Z,32.3521,49.7749,10,5.1,mb,,40,4.36,1.03,us,us6000ft57,2021-10-09T23:22:10.862Z,"64 km NE of Masjed Soleymān, Iran",earthquake,7.7,1.8,0.041,189,reviewed,us,us
+2021-10-08T22:55:34.652Z,-60.1912,-24.2339,10,5,mb,,70,8.89,0.79,us,us6000ft50,2021-10-09T23:15:44.040Z,"South Sandwich Islands region",earthquake,10,1.8,0.076,55,reviewed,us,us
+2021-10-08T21:39:25.346Z,-56.5869,-25.6458,13.97,5.1,mww,,91,6.587,0.79,us,us6000ft4i,2021-10-08T22:04:00.040Z,"South Sandwich Islands region",earthquake,11.1,4,0.098,10,reviewed,us,us
+2021-10-08T18:28:23.970Z,18.0105,-65.3871,11,4.8,ml,34,249,0.1867,0.22,pr,pr2021281003,2021-10-10T14:08:52.446Z,"13 km SE of Esperanza, Puerto Rico",earthquake,1.48,0.89,0.12,26,reviewed,pr,pr
+2021-10-08T16:47:26.868Z,-35.4511,141.0099,10,4.9,mb,,63,2.297,1.12,us,us6000ft1w,2021-10-11T01:25:48.511Z,"93 km NE of Keith, Australia",earthquake,6.7,1.9,0.09,39,reviewed,us,us
+2021-10-08T15:53:38.307Z,-19.4451,-173.4776,10,4.8,mb,,168,5.74,0.61,us,us6000ft1g,2021-10-08T16:12:24.040Z,"100 km ENE of Pangai, Tonga",earthquake,16.2,1.9,0.103,29,reviewed,us,us
+2021-10-08T13:24:14.677Z,-6.076,151.7018,10,4.9,mb,,128,12.262,1.04,us,us6000fsyn,2021-10-08T15:40:26.040Z,"182 km ESE of Kimbe, Papua New Guinea",earthquake,14,1.9,0.08,49,reviewed,us,us
+2021-10-08T10:04:53.941Z,4.4084,95.4031,64.27,5.2,mb,,107,1.741,1.06,us,us6000fsxi,2021-10-08T12:02:55.045Z,"85 km WNW of Meulaboh, Indonesia",earthquake,8.4,6.9,0.053,120,reviewed,us,us
+2021-10-08T09:27:58.627Z,-49.1481,124.8392,10,4.6,mb,,116,17.174,0.52,us,us6000fsxe,2021-10-08T10:28:47.040Z,"western Indian-Antarctic Ridge",earthquake,7.6,1.9,0.129,18,reviewed,us,us
+2021-10-08T06:43:07.608Z,-23.9165,-66.7708,203.9,4.5,mb,,70,1.61,0.61,us,us6000fswp,2021-10-08T06:57:56.040Z,"56 km NW of San Antonio de los Cobres, Argentina",earthquake,9.4,7.6,0.14,15,reviewed,us,us
+2021-10-07T20:13:01.156Z,-58.7534,158.6288,10,5.9,mwb,,26,4.269,1.06,us,us6000fssl,2021-10-09T18:18:45.842Z,"Macquarie Island region",earthquake,10,1.7,0.035,79,reviewed,us,us
+2021-10-07T18:28:03.697Z,22.3148,94.7755,110,5.5,mww,,23,1.135,0.8,us,us6000fsrg,2021-10-09T17:45:07.935Z,"43 km WNW of Monywa, Myanmar",earthquake,5.9,1.9,0.056,31,reviewed,us,us
+2021-10-07T18:14:54.076Z,13.9481,120.713,158.73,5.3,mww,,46,8.984,1.35,us,us6000fsrb,2021-10-09T13:42:49.059Z,"2 km WNW of Balayan, Philippines",earthquake,9.4,4.8,0.051,37,reviewed,us,us
+2021-10-07T17:56:15.132Z,-55.7228,-26.4592,10,5.3,mww,,47,5.949,0.67,us,us6000fsr4,2021-10-09T13:32:09.906Z,"South Sandwich Islands region",earthquake,9.8,1.8,0.078,16,reviewed,us,us
+2021-10-07T13:41:24.549Z,35.5771,140.0698,62,5.9,mww,,29,1.788,1.12,us,us6000fsl6,2021-10-11T16:57:20.517Z,"4 km WSW of Chiba, Japan",earthquake,6,1.9,0.055,32,reviewed,us,us
+2021-10-07T05:13:01.266Z,-8.2851,119.5236,186.86,4.9,mb,,61,2.707,1.11,us,us6000fsir,2021-10-07T05:39:14.040Z,"33 km N of Komodo, Indonesia",earthquake,7.8,6.9,0.091,38,reviewed,us,us
+2021-10-07T04:18:42.590Z,24.5198,122.5545,81.13,4.9,mb,,69,0.419,0.43,us,us6000fsik,2021-10-10T20:49:30.040Z,"45 km W of Yonakuni, Japan",earthquake,4.2,5.5,0.074,60,reviewed,us,us
+2021-10-07T01:05:40.236Z,-6.8531,105.0465,35,4.6,mb,,72,2.653,0.95,us,us6000fshw,2021-10-08T04:00:25.040Z,"101 km WSW of Labuan, Indonesia",earthquake,6.8,1.9,0.112,24,reviewed,us,us
+2021-10-07T00:09:20.289Z,-39.2177,174.7641,218.19,4.6,mb,,71,0.707,0.69,us,us6000fshg,2021-10-07T18:56:45.255Z,"46 km ENE of Eltham, New Zealand",earthquake,6.7,5.3,0.116,22,reviewed,us,us
+2021-10-07T00:00:57.282Z,30.1172,68.0341,10,4.6,mb,,100,4.492,0.87,us,us6000fshe,2021-10-07T06:43:26.631Z,"9 km E of Harnai, Pakistan",earthquake,10.1,1.9,0.076,51,reviewed,us,us
+2021-10-06T23:40:21.654Z,2.5792,128.336,175.97,4.5,mb,,116,2.04,0.62,us,us6000fsh4,2021-10-07T00:46:21.040Z,"100 km NNE of Tobelo, Indonesia",earthquake,10.5,8.7,0.09,36,reviewed,us,us
+2021-10-06T23:38:09.136Z,-25.228,-64.5252,10,5,mb,,49,4.034,1.17,us,us6000fsh2,2021-10-09T01:00:30.859Z,"21 km NE of El Galpón, Argentina",earthquake,6.9,1.9,0.035,261,reviewed,us,us
+2021-10-06T22:44:58.266Z,-5.0888,146.3141,10,4.6,mb,,62,3.202,0.63,us,us6000fsgh,2021-10-06T23:05:24.040Z,"60 km ENE of Madang, Papua New Guinea",earthquake,10.2,1.9,0.116,22,reviewed,us,us
+2021-10-06T22:01:08.730Z,30.2198,68.015,9,5.9,mww,,23,4.395,0.74,us,us6000fsg9,2021-10-10T06:22:12.250Z,"15 km NNE of Harnai, Pakistan",earthquake,8.8,1.8,0.098,10,reviewed,us,us
+2021-10-06T20:41:17.592Z,-23.0386,173.081,10,4.5,mb,,132,5.215,1.02,us,us6000fsg3,2021-10-09T21:50:25.040Z,"southeast of the Loyalty Islands",earthquake,4.1,1.9,0.131,17,reviewed,us,us
+2021-10-06T19:57:34.518Z,43.7034,16.8607,16.11,4.9,mb,,22,1.07,1.27,us,us6000fsew,2021-10-07T10:44:25.999Z,"7 km S of Orguz, Bosnia and Herzegovina",earthquake,2.7,4.4,0.062,80,reviewed,us,us
+2021-10-06T15:54:20.374Z,-15.442,-173.3277,35,5.4,mb,,43,2.135,0.62,us,usd000g72h,2021-10-07T16:48:58.277Z,"75 km NE of Hihifo, Tonga",earthquake,9.2,1.9,0.025,562,reviewed,us,us
+2021-10-06T08:12:55.045Z,31.2593,131.471,35,5.4,mww,,38,0.905,1.36,us,us6000fs8m,2021-10-07T17:03:18.664Z,"33 km SE of Kushima, Japan",earthquake,4.1,1.9,0.061,26,reviewed,us,us
+2021-10-06T06:36:56.410Z,19.2256666666667,-155.398,32.69,4.55,ml,57,145,,0.12,hv,hv72742352,2021-10-11T02:29:47.222Z,"8 km ENE of Pāhala, Hawaii",earthquake,0.44,0.48,0.156343368352568,39,reviewed,hv,hv
+2021-10-06T03:42:22.013Z,53.4836,-163.4948,11.68,4.5,mb,,164,1.181,0.78,us,us6000fs72,2021-10-08T03:31:08.040Z,"152 km S of False Pass, Alaska",earthquake,3.6,5.1,0.089,37,reviewed,us,us
+2021-10-06T02:55:31.243Z,43.1908,146.7208,66.07,4.5,mb,,169,2.881,0.65,us,us6000fs6r,2021-10-06T03:29:11.040Z,"67 km S of Shikotan, Russia",earthquake,10.4,7.4,0.115,22,reviewed,us,us
+2021-10-05T23:27:55.919Z,30.3937,94.8363,10,4.5,mb,,122,5.483,1.07,us,us6000fs51,2021-10-06T00:16:21.040Z,"211 km NNE of Shi Yomi, India",earthquake,10.4,1.5,0.102,28,reviewed,us,us
+2021-10-05T19:37:48.025Z,6.8571,-73.0503,145.95,4.8,mb,,51,0.958,0.71,us,us6000fs0z,2021-10-05T20:08:27.825Z,"14 km NW of Cepitá, Colombia",earthquake,8.1,8,0.03,354,reviewed,us,us
+2021-10-05T18:03:42.778Z,25.6386,125.0477,10,5.1,mww,,70,2.184,1.02,us,us6000frzp,2021-10-06T16:27:01.820Z,"95 km NNW of Hirara, Japan",earthquake,7.1,1.8,0.05,39,reviewed,us,us
+2021-10-05T17:46:02.054Z,40.076,142.2531,44.77,5.7,mww,,15,1.153,0.86,us,us6000frzg,2021-10-07T07:15:28.829Z,"54 km NNE of Miyako, Japan",earthquake,6.6,4.1,0.046,45,reviewed,us,us
+2021-10-05T17:30:27.543Z,25.7446,125.0424,8.38,5.4,mww,,34,2.237,0.86,us,us6000frzb,2021-10-06T17:35:30.258Z,"107 km NNW of Hirara, Japan",earthquake,6.4,3.4,0.049,40,reviewed,us,us
+2021-10-05T16:08:06.692Z,-17.9287,-178.4967,563.55,4.5,mb,,114,3.291,0.68,us,us6000frz1,2021-10-11T14:54:16.040Z,"232 km E of Levuka, Fiji",earthquake,9.8,7,0.033,274,reviewed,us,us
+2021-10-05T11:46:02.353Z,-10.1757,161.6067,91.5,4.7,mb,,65,1.791,0.55,us,us6000frwu,2021-10-05T12:18:33.040Z,"46 km NW of Kirakira, Solomon Islands",earthquake,9.2,7.1,0.048,132,reviewed,us,us
+2021-10-05T09:07:33.411Z,-59.095,-23.0103,10,5,mb,,131,8.839,0.66,us,us6000frv3,2021-10-05T09:27:27.040Z,"South Sandwich Islands region",earthquake,11.4,2,0.08,50,reviewed,us,us
+2021-10-05T08:51:08.115Z,2.7574,122.3383,533.94,4.5,mb,,72,2.256,0.53,us,us6000frv0,2021-10-05T09:21:29.040Z,"Celebes Sea",earthquake,11.4,9.1,0.088,38,reviewed,us,us
+2021-10-05T07:59:57.586Z,36.865,66.6796,10,5.1,mww,,65,3.013,1.2,us,us6000frum,2021-10-06T04:21:39.932Z,"21 km SSW of Qarchī Gak, Afghanistan",earthquake,7.6,1.9,0.093,11,reviewed,us,us
+2021-10-05T02:38:20.929Z,30.3423,94.7762,34.18,4.7,mb,,116,6.103,0.44,us,us6000frs4,2021-10-08T00:04:22.040Z,"204 km N of Shi Yomi, India",earthquake,9.3,3,0.083,44,reviewed,us,us
+2021-10-05T01:12:16.136Z,13.7792,93.6855,60.3,5,mb,,74,5.309,0.51,us,us6000frr8,2021-10-05T22:54:28.040Z,"252 km NNE of Bamboo Flat, India",earthquake,12,7.3,0.141,16,reviewed,us,us

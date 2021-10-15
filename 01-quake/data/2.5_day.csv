@@ -1,0 +1,47 @@
+time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,type,horizontalError,depthError,magError,magNst,status,locationSource,magSource
+2021-10-11T21:25:47.140Z,19.1593341827393,-155.503173828125,35.1199989318848,2.53999996,md,44,117,,0.119999997,hv,hv72750412,2021-10-11T22:00:17.040Z,"5 km SSW of Pāhala, Hawaii",earthquake,0.53,0.699999988,2.04999995,27,automatic,hv,hv
+2021-10-11T20:38:55.210Z,37.4474983,-118.5446701,8.48,2.77,md,24,74,0.09391,0.05,nc,nc73638450,2021-10-11T20:58:39.893Z,"6km NE of Round Valley, CA",earthquake,0.26,0.79,0.22,31,automatic,nc,nc
+2021-10-11T19:40:25.274Z,56.2823,-156.5443,57.4,4.1,ml,,,,0.61,ak,ak021d206f9o,2021-10-11T22:30:37.940Z,"115 km E of Chignik, Alaska",earthquake,,0.7,,,reviewed,ak,ak
+2021-10-11T19:35:57.427Z,56.2846,-156.4769,28.6,2.9,ml,,,,0.41,ak,ak021d205f9d,2021-10-11T20:46:24.040Z,"119 km E of Chignik, Alaska",earthquake,,1.3,,,automatic,ak,ak
+2021-10-11T18:25:48.424Z,51.4765,-174.4297,35,4.9,mb,,143,0.824,0.8,us,us6000ftru,2021-10-11T19:21:39.040Z,"81 km S of Atka, Alaska",earthquake,1.8,2,0.035,268,reviewed,us,us
+2021-10-11T17:56:24.271Z,56.3127,-156.5448,40.2,3.5,ml,,,,0.63,ak,ak021d1z2zhz,2021-10-11T19:48:10.040Z,"115 km E of Chignik, Alaska",earthquake,,2.4,,,automatic,ak,ak
+2021-10-11T17:30:29.810Z,0.8374,126.132,24.97,5,mb,,40,1.236,0.78,us,us6000ftrd,2021-10-11T17:57:47.040Z,"139 km W of Ternate, Indonesia",earthquake,6,4.7,0.06,95,reviewed,us,us
+2021-10-11T16:49:19.275Z,-16.9151,-174.4018,253.35,4.3,mb,,124,3.913,0.44,us,us6000fts2,2021-10-11T21:32:14.040Z,"124 km SSW of Hihifo, Tonga",earthquake,11.8,7.9,0.111,24,reviewed,us,us
+2021-10-11T16:35:48.292Z,-7.4993,128.1518,156.16,4.4,mb,,39,3.155,0.69,us,us6000ftr4,2021-10-11T17:09:16.040Z,"170 km NE of Lospalos, Timor Leste",earthquake,8,7.7,0.107,28,reviewed,us,us
+2021-10-11T16:28:28.786Z,61.8777,-149.3333,0.2,2.9,ml,,,,0.87,ak,ak021d1ybk5z,2021-10-11T16:58:38.040Z,"15 km NNW of Fishhook, Alaska",earthquake,,0.3,,,automatic,ak,ak
+2021-10-11T15:56:45.270Z,18.79,-65.3805,11,3.43,md,16,269,0.4923,0.33,pr,pr2021284000,2021-10-11T16:57:35.163Z,"54 km N of Culebra, Puerto Rico",earthquake,6.41,9.23,0.14,11,reviewed,pr,pr
+2021-10-11T15:27:49.072Z,0.8759,126.1488,10,5.1,mb,,32,1.222,0.49,us,us6000ftqr,2021-10-11T16:48:27.926Z,"137 km W of Ternate, Indonesia",earthquake,5.5,1.8,0.054,120,reviewed,us,us
+2021-10-11T15:13:32.281Z,-27.3188,-70.6017,62.96,4.2,mwr,,133,0.223,0.58,us,us6000ftqp,2021-10-11T17:21:00.704Z,"27 km WNW of Copiapó, Chile",earthquake,6,4.9,,,reviewed,us,guc
+2021-10-11T14:12:53.807Z,56.2498,-156.5319,65.4,2.6,ml,,,,0.47,ak,ak021d1x1bgk,2021-10-11T14:39:04.040Z,"116 km E of Chignik, Alaska",earthquake,,1.3,,,automatic,ak,ak
+2021-10-11T13:59:31.772Z,56.2795,-156.5721,50.1,3.5,ml,,,,0.51,ak,ak021d1wpwr6,2021-10-11T21:13:58.040Z,"113 km E of Chignik, Alaska",earthquake,,1.1,,,reviewed,ak,ak
+2021-10-11T12:50:36.786Z,34.0855,25.8885,10,4.2,mb,,175,1.454,0.68,us,us6000ftps,2021-10-11T13:02:58.040Z,"103 km S of Ierápetra, Greece",earthquake,6.8,2,0.115,21,reviewed,us,us
+2021-10-11T12:34:32.285Z,0.8215,126.1888,9.19,5.7,mww,,40,1.178,0.98,us,us6000ftpp,2021-10-11T21:57:46.571Z,"133 km W of Ternate, Indonesia",earthquake,6.8,3.2,0.075,17,reviewed,us,us
+2021-10-11T12:24:48.937Z,53.368,-159.9824,25.6,3.1,ml,,,,0.52,ak,ak021d1vx5gj,2021-10-11T18:22:41.051Z,"221 km S of Sand Point, Alaska",earthquake,,3.6,,,reviewed,ak,ak
+2021-10-11T12:04:50.508Z,57.2949,-146.1408,10,3.3,ml,,202,2.143,0.4,us,us6000ftpm,2021-10-11T12:17:19.040Z,"Gulf of Alaska",earthquake,7.5,2,0.041,80,reviewed,us,us
+2021-10-11T09:44:39.191Z,56.361,-156.4747,81.9,2.7,ml,,,,0.28,ak,ak021d1u8zjf,2021-10-11T09:50:38.207Z,"119 km E of Chignik, Alaska",earthquake,,1.5,,,automatic,ak,ak
+2021-10-11T09:30:52.082Z,56.4031,-156.5252,63.3,3.2,ml,,,,0.8,ak,ak021d1u606z,2021-10-11T09:41:22.007Z,"116 km E of Chignik, Alaska",earthquake,,1.6,,,automatic,ak,ak
+2021-10-11T09:28:47.182Z,56.2908,-156.5319,48.6,2.9,ml,,,,0.42,ak,ak021d1u5kat,2021-10-11T09:32:14.982Z,"115 km E of Chignik, Alaska",earthquake,,2.8,,,automatic,ak,ak
+2021-10-11T09:26:21.324Z,56.3101,-156.5352,69.5,3.3,ml,,,,0.66,ak,ak021d1u52w0,2021-10-11T10:25:56.040Z,"115 km E of Chignik, Alaska",earthquake,,0.6,,,reviewed,ak,ak
+2021-10-11T09:10:24.682Z,56.2584,-156.5532,69.1,6.9,mww,,,,0.71,ak,ak021d1u1nos,2021-10-11T22:11:00.355Z,"114 km E of Chignik, Alaska",earthquake,,0.9,,,reviewed,ak,ak
+2021-10-11T08:30:08.676Z,5.9847,-73.3004,171.68,4.1,mb,,63,0.234,0.61,us,us6000ftnd,2021-10-11T10:02:19.040Z,"6 km NE of Gámbita, Colombia",earthquake,5.3,5,0.095,31,reviewed,us,us
+2021-10-11T08:20:54.220Z,18.8801670074463,-155.518005371094,32.4599990844727,2.47000003,md,22,263,,0.100000001,hv,hv72749707,2021-10-11T08:24:08.810Z,"21 km SSE of Naalehu, Hawaii",earthquake,0.88,1.11000001,1.05999994,3,automatic,hv,hv
+2021-10-11T08:00:11.950Z,19.2250003814697,-155.41633605957,34.4000015258789,2.91,ml,53,136,,0.140000001,hv,hv72749677,2021-10-11T11:33:44.197Z,"6 km ENE of Pāhala, Hawaii",earthquake,0.48,0.689999998,3.59,31,automatic,hv,hv
+2021-10-11T07:45:10.332Z,-7.0554,156.051,79.06,4.5,mb,,100,4.525,0.7,us,us6000ftna,2021-10-11T09:03:58.040Z,"102 km SE of Panguna, Papua New Guinea",earthquake,7.7,4.8,0.09,37,reviewed,us,us
+2021-10-11T07:38:58.987Z,11.1775,-86.8972,26.95,4,mb,,186,1.155,0.64,us,us6000ftn1,2021-10-11T08:32:50.040Z,"79 km SSW of Masachapa, Nicaragua",earthquake,5.2,9.3,0.113,23,reviewed,us,us
+2021-10-11T06:18:31.168Z,63.3357,-145.4695,0,3.7,ml,,,,1.18,ak,ak021d1sb34t,2021-10-11T09:29:37.903Z,"28 km NNE of Paxson, Alaska",earthquake,,0.6,,,automatic,ak,ak
+2021-10-11T06:08:15.600Z,44.2801667,-115.0785,7.03,3.01,ml,20,78,0.863,0.27,mb,mb80526744,2021-10-11T14:35:50.920Z,"13 km WNW of Stanley, Idaho",earthquake,0.95,1.96,0.217,28,reviewed,mb,mb
+2021-10-11T06:04:57.110Z,44.2898333,-115.0708333,7.47,2.88,ml,21,78,0.868,0.27,mb,mb80526734,2021-10-11T15:14:07.690Z,"13 km NW of Stanley, Idaho",earthquake,1.55,3.45,0.207,23,reviewed,mb,mb
+2021-10-11T05:45:36.250Z,44.2826667,-115.0805,5.99,2.74,ml,15,78,0.866,0.25,mb,mb80526719,2021-10-11T15:38:36.020Z,"southern Idaho",earthquake,1.06,2.11,0.187,19,reviewed,mb,mb
+2021-10-11T04:43:57.870Z,18.8103332519531,-155.499664306641,16.5300006866455,2.9,ml,47,285,,0.180000007,hv,hv72749392,2021-10-11T04:49:28.790Z,"29 km SSE of Naalehu, Hawaii",earthquake,0.83,13.9499998,3.79,10,automatic,hv,hv
+2021-10-11T03:53:41.602Z,29.36737061,-97.37971048,2.518839518,2.6,ml,16,102,0.1091389343,0.3,tx,tx2021txjd,2021-10-11T20:05:37.051Z,"16 km SSE of Gonzales, Texas",earthquake,1.987882942,2.100030119,0.1,9,reviewed,tx,tx
+2021-10-11T03:09:54.588Z,-9.0314,122.3758,97.91,4.9,mb,,40,0.416,0.79,us,us6000ftlq,2021-10-11T03:28:53.040Z,"48 km SSE of Maumere, Indonesia",earthquake,5.4,4.9,0.083,45,reviewed,us,us
+2021-10-11T02:14:50.806Z,-22.3845,-67.4727,194.91,4.6,mb,,78,0.862,0.86,us,us6000ftll,2021-10-11T02:32:18.040Z,"94 km NE of San Pedro de Atacama, Chile",earthquake,9.3,11.7,0.182,9,reviewed,us,us
+2021-10-11T01:48:29.200Z,18.8763333333333,-155.515333333333,34.66,2.6,ml,50,262,,0.11,hv,hv72749192,2021-10-11T03:54:24.790Z,"22 km SSE of Naalehu, Hawaii",earthquake,0.62,0.92,0.159737461636056,14,reviewed,hv,hv
+2021-10-11T01:29:15.740Z,19.174165725708,-155.484832763672,31.4400005340576,2.66,ml,46,85,,0.119999997,hv,hv72749157,2021-10-11T02:26:17.801Z,"3 km SSW of Pāhala, Hawaii",earthquake,0.46,0.670000017,3.87,26,automatic,hv,hv
+2021-10-11T01:01:35.970Z,18.8453333333333,-155.516333333333,35.87,2.5,ml,39,274,,0.11,hv,hv72749127,2021-10-11T01:49:17.040Z,"25 km SSE of Naalehu, Hawaii",earthquake,0.64,0.81,0.0827247631480628,5,reviewed,hv,hv
+2021-10-11T00:16:10.014Z,58.1154,-154.6722,8.5,2.8,ml,,,,0.79,ak,ak021d1oq0g0,2021-10-11T00:29:23.040Z,"62 km NNW of Karluk, Alaska",earthquake,,0.3,,,automatic,ak,ak
+2021-10-10T23:21:45.259Z,-23.1263,-66.7805,223.89,4.4,mb,,44,1.299,0.91,us,us6000ftkq,2021-10-10T23:35:11.040Z,"113 km W of El Aguilar, Argentina",earthquake,5.6,9.8,0.103,27,reviewed,us,us
+2021-10-10T23:06:08.140Z,19.2058334350586,-155.438995361328,32.9700012207031,2.49,ml,51,130,,0.119999997,hv,hv72748932,2021-10-10T23:18:25.040Z,"4 km E of Pāhala, Hawaii",earthquake,0.52,0.720000029,3.22,8,automatic,hv,hv
+2021-10-10T23:04:11.490Z,51.2926666666667,-179.0815,11.92,2.51,ml,13,250,,0.12,av,av91391006,2021-10-11T22:23:06.310Z,"181 km WSW of Adak, Alaska",earthquake,0.63,0.65,0.208989110515545,14,reviewed,av,av
+2021-10-10T22:55:28.710Z,18.8688333333333,-155.515833333333,35.52,2.87,ml,50,265,,0.13,hv,hv72748917,2021-10-11T02:27:12.890Z,"23 km SSE of Naalehu, Hawaii",earthquake,0.48,0.88,0.157633131401052,19,reviewed,hv,hv
+2021-10-10T22:45:47.790Z,18.8806666666667,-155.512666666667,34.96,3.25,ml,54,260,,0.12,hv,hv72748887,2021-10-11T02:25:03.246Z,"21 km SSE of Naalehu, Hawaii",earthquake,0.43,0.73,0.175772202660816,35,reviewed,hv,hv

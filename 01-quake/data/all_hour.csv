@@ -1,0 +1,6 @@
+time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,type,horizontalError,depthError,magError,magNst,status,locationSource,magSource
+2021-10-11T21:56:33.740Z,61.797,-150.0006,26.5,2.3,ml,,,,0.52,ak,ak021d21gqod,2021-10-11T22:00:39.325Z,"5 km NNE of Willow, Alaska",earthquake,,0.3,,,automatic,ak,ak
+2021-10-11T21:31:42.240Z,35.511,-96.74533333,7.89,2.33,ml,100,32,0,0.17,ok,ok2021tyrz,2021-10-11T22:07:04.581Z,"6 km WNW of Prague, Oklahoma",earthquake,,0.4,0.21,35,reviewed,ok,ok
+2021-10-11T21:25:47.140Z,19.1593341827393,-155.503173828125,35.1199989318848,2.53999996,md,44,117,,0.119999997,hv,hv72750412,2021-10-11T22:00:17.040Z,"5 km SSW of Pāhala, Hawaii",earthquake,0.53,0.699999988,2.04999995,27,automatic,hv,hv
+2021-10-11T21:25:42.750Z,38.8139992,-122.8046646,2.51,0.5,md,16,52,0.009474,0.02,nc,nc73638475,2021-10-11T21:52:12.783Z,"6km NW of The Geysers, CA",earthquake,0.27,0.74,0.35,2,automatic,nc,nc
+2021-10-11T21:23:20.690Z,37.6185,-118.869,3.43,0.62,md,11,130,0.004827,0.09,nc,nc73638470,2021-10-11T21:55:10.799Z,"10km ESE of Mammoth Lakes, CA",earthquake,0.63,0.93,0.071,9,reviewed,nc,nc
