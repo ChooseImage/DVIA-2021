@@ -1,0 +1,14 @@
+{
+  "name": "7e48e5057323af6a",
+  "main": "7e48e5057323af6a@501.js",
+  "version": "501.0.0",
+  "homepage": "https://observablehq.com/d/7e48e5057323af6a",
+  "author": {
+    "name": "Tsung-Han Ho",
+    "url": "https://observablehq.com/@f4fbf3f7f04360cd"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}
