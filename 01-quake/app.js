@@ -1,29 +1,166 @@
-const DUMMY_DATA = [
-  { id: "d1", value: 10, region: "USA" },
-  { id: "d2", value: 11, region: "Inda" },
-  { id: "d3", value: 12, region: "China" },
-  { id: "d4", value: 6, region: "Germany" }
-];
+// set the dimensions and margins of the graph
+const margin = { top: 80, right: 30, bottom: 50, left: 110 },
+  width = 460 - margin.left - margin.right,
+  height = 400 - margin.top - margin.bottom;
 
-const xScale = d3
-  .scaleBand()
-  .domain(DUMMY_DATA.map(dataPoint => dataPoint.region))
-  .rangeRound([0, 250])
-  .padding(0.1);
+// append the svg object to the body of the page
+const svg = d3
+  .select("#my_dataviz")
+  .append("svg")
+  .attr("width", width + margin.left + margin.right)
+  .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+  .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
-const yScale = d3
-  .scaleLinear()
-  .domain([0, 15])
-  .range([200, 0]);
-const container = d3.select("svg").classed("container", true);
+//read data
+const 4.5_csv = d3.csv("data/4.5_week.csv");
 
-const bars = container
-  .selectAll(".bar")
-  .data(DUMMY_DATA)
-  .enter()
-  .append("rect")
-  .classed("bar", true)
-  .attr("width", xScale.bandwidth())
-  .attr("height", data => 200 - yScale(data.value))
-  .attr("x", data => xScale(data.region))
-  .attr("y", data => yScale(data.value));
+d3.csv("/data/4.5_week.csv", function(data) {
+  for (var i = 0; i < data.length; i++) {
+      console.log(data[i].Name);
+      console.log(data[i].Age);
+  }
+});
+
+
+d3.csv(
+  "https://raw.githubusercontent.com/zonination/perceptions/master/probly.csv"
+).then(function(data) {
+  // Get the different categories and count them
+  const categories = [
+    "Almost Certainly",
+    "Very Good Chance",
+    "We Believe",
+    "Likely",
+    "About Even",
+    "Little Chance",
+    "Chances Are Slight",
+    "Almost No Chance"
+  ];
+  const n = categories.length;
+
+  // Compute the mean of each group
+  allMeans = [];
+  for (i in categories) {
+    currentGroup = categories[i];
+    mean = d3.mean(data, function(d) {
+      return +d[currentGroup];
+    });
+    allMeans.push(mean);
+  }
+
+  // Create a color scale using these means.
+  const myColor = d3
+    .scaleSequential()
+    .domain([0, 100])
+    .interpolator(d3.interpolateViridis);
+
+  // Add X axis
+  const x = d3
+    .scaleLinear()
+    .domain([-10, 120])
+    .range([0, width]);
+  svg
+    .append("g")
+    .attr("class", "xAxis")
+    .attr("transform", "translate(0," + height + ")")
+    .call(
+      d3
+        .axisBottom(x)
+        .tickValues([0, 25, 50, 75, 100])
+        .tickSize(-height)
+    )
+    .select(".domain")
+    .remove();
+
+  // Add X axis label:
+  svg
+    .append("text")
+    .attr("text-anchor", "end")
+    .attr("x", width)
+    .attr("y", height + 40)
+    .text("Probability (%)");
+
+  // Create a Y scale for densities
+  const y = d3
+    .scaleLinear()
+    .domain([0, 0.25])
+    .range([height, 0]);
+
+  // Create the Y axis for names
+  const yName = d3
+    .scaleBand()
+    .domain(categories)
+    .range([0, height])
+    .paddingInner(1);
+  svg
+    .append("g")
+    .call(d3.axisLeft(yName).tickSize(0))
+    .select(".domain")
+    .remove();
+
+  // Compute kernel density estimation for each column:
+  const kde = kernelDensityEstimator(kernelEpanechnikov(7), x.ticks(40)); // increase this 40 for more accurate density.
+  const allDensity = [];
+  for (i = 0; i < n; i++) {
+    key = categories[i];
+    density = kde(
+      data.map(function(d) {
+        return d[key];
+      })
+    );
+    allDensity.push({ key: key, density: density });
+  }
+
+  // Add areas
+  svg
+    .selectAll("areas")
+    .data(allDensity)
+    .join("path")
+    .attr("transform", function(d) {
+      return `translate(0, ${yName(d.key) - height})`;
+    })
+    .attr("fill", function(d) {
+      grp = d.key;
+      index = categories.indexOf(grp);
+      value = allMeans[index];
+      return myColor(value);
+    })
+    .datum(function(d) {
+      return d.density;
+    })
+    .attr("opacity", 0.7)
+    .attr("stroke", "#000")
+    .attr("stroke-width", 0.1)
+    .attr(
+      "d",
+      d3
+        .line()
+        .curve(d3.curveBasis)
+        .x(function(d) {
+          return x(d[0]);
+        })
+        .y(function(d) {
+          return y(d[1]);
+        })
+    );
+});
+
+// This is what I need to compute kernel density estimation
+function kernelDensityEstimator(kernel, X) {
+  return function(V) {
+    return X.map(function(x) {
+      return [
+        x,
+        d3.mean(V, function(v) {
+          return kernel(x - v);
+        })
+      ];
+    });
+  };
+}
+function kernelEpanechnikov(k) {
+  return function(v) {
+    return Math.abs((v /= k)) <= 1 ? (0.75 * (1 - v * v)) / k : 0;
+  };
+}
