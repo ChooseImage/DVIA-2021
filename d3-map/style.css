@@ -1,0 +1,19 @@
+body{
+    margin: 0px;
+    overflow: hidden;
+    background-color: lightgrey;
+}
+
+.sphere {
+    fill:#dbdbdb;
+}
+
+.country {
+    fill: rgb(190, 190, 190);
+    stroke: white;
+    stroke-opacity: 0.2;
+}
+
+.country:hover {
+        fill:teal;
+}
