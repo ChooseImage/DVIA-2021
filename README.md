@@ -1,3 +1,3 @@
 # DVIA-2021
 
-### [04-Visualize Space](/04-Space) 
+### [Repo for DVIA-21 assignments](/index.html) 
