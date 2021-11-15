@@ -26,13 +26,13 @@ DOM.range(0, 360,1)
   
   // Draw the seas.
   c.lineWidth = 1.5;
-  c.fillStyle = d3.color("rgb(130, 130, 130)");
+  c.fillStyle = d3.color("rgb(190, 190, 190)");
   c.beginPath(), c.arc(s / 2, s / 2, radius, 0, 2 * Math.PI), c.fill(), c.stroke();
   
   // Draw the land.
   c.lineWidth = 0.35;
   c.strokeStyle = "white";
-  c.fillStyle = d3.color("rgb(130, 130, 130)");
+  c.fillStyle = d3.color("rgb(170, 170, 170)");
   c.beginPath(), path(world), c.fill(), c.stroke();
   
   // Draw the earthquakes.
