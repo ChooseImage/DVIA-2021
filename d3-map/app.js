@@ -1,9 +1,24 @@
-const url = 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson';
+const quakeUrl = 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson';
+const mapUrl = "https://d3js.org/world-110m.v1.json";
 
 //Fetch Quake GeoJSON
+d3.queue()
+.defer(
+    d3.json,
+    mapUrl
+)
+.defer(
+    d3.json,
+    quakeUrl
+)
+.await(ready);
+
+function ready(error, dataGeo, data){
+    console.log("dataGeo", dataGeo, "data", data);
+}
 
 async function fetchQuakes(){
-    const response = await fetch(url);
+    const response = await fetch(quakeUrl);
     const quakes = await response.json();
     return quakes.features[30].properties;
 }
@@ -12,7 +27,7 @@ const quakes = fetchQuakes();
 
 //console.log(quakes);
 
-fetchQuakes();
+//fetchQuakes();
 
 const svg = d3.select("svg");
 
@@ -23,6 +38,12 @@ svg.append('path')
 .attr('class', 'sphere')
 .attr('d', pathGenerator({type: "Sphere"}));
 
+// var projection = d3
+//     .geoOrthographic()
+//     .center([0, 20])
+//     .scale(99)
+//     .translate
+
 
 
 // Loading id --> country names
@@ -31,7 +52,7 @@ svg.append('path')
 
 
 Promise.all([
-    d3.json(url),
+    d3.json(quakeUrl),
     d3.json('https://d3js.org/world-110m.v1.json')
 ]).then(([quake, topoJSONdata]) => {
     console.log(quake.features[0].properties.mag);
