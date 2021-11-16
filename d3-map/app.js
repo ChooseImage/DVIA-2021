@@ -31,13 +31,14 @@ svg.append('path')
 
 
 Promise.all([
-    d3.tsv('https://d3js.org/world-110m.v1.tsv'),
+    d3.json(url),
     d3.json('https://d3js.org/world-110m.v1.json')
-]).then(([tsvData, topoJSONdata]) => {
-    const countryName = tsvData.reduce((accumulator, d)=>{
-        accumulator[d.iso_n3] = d;
-        return accumulator;
-    }, {});
+]).then(([quake, topoJSONdata]) => {
+    console.log(quake.features[0].properties.mag);
+    // const countryName = tsvData.reduce((accumulator, d)=>{
+    //     accumulator[d.iso_n3] = d;
+    //     return accumulator;
+    // }, {});
 
     /*
     const countryName = {};
@@ -57,7 +58,7 @@ Promise.all([
     .attr('title', 'input')
     .attr('d', pathGenerator)
     .append('title')
-    .text(d => countryName[d.id].name);
+    //.text(d => countryName[d.id].name);
 });
 
 
