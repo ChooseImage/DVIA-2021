@@ -33,7 +33,8 @@ var svg = d3.select("#my_dataviz")
 const movie = "movieRating.csv";
 const moviepta = "movieRatingpta.csv";
 const dummy = "https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/7_OneCatOneNum.csv";
-const thickness = 10;
+const thickness = 50;
+const labelOffset = 20;
 
 d3.csv(moviepta, function(data) {
 
@@ -59,7 +60,7 @@ d3.csv(moviepta, function(data) {
           .innerRadius(function(d) { return y(d['avg_vote']) - thickness; })
           .outerRadius(function(d) { return y(d['avg_vote']); })
           .startAngle(function(d) { return x(d.original_title); })
-          .endAngle(function(d) { return x(d.original_title) + x.bandwidth(); })
+          .endAngle(function(d) { return x(d.original_title) + x.bandwidth()  / 3; })
           .padAngle(0.05)
           .padRadius(innerRadius))
 
@@ -72,8 +73,8 @@ d3.csv(moviepta, function(data) {
       .attr("d", d3.arc()     // imagine your doing a part of a donut plot
           .innerRadius(function(d) { return y(d['let']) - thickness; })
           .outerRadius(function(d) { return y(d['let']); })
-          .startAngle(function(d) { return x(d.original_title); })
-          .endAngle(function(d) { return x(d.original_title) + x.bandwidth(); })
+          .startAngle(function(d) { return x(d.original_title) + x.bandwidth() / 3 ; })
+          .endAngle(function(d) { return x(d.original_title) + x.bandwidth() * 2 / 3 ; })
           .padAngle(0.05)
           .padRadius(innerRadius))
 
@@ -84,9 +85,9 @@ d3.csv(moviepta, function(data) {
     .append("path")
       .attr("fill", "darkgrey")
       .attr("d", d3.arc()     // imagine your doing a part of a donut plot
-          .innerRadius(function(d) { return y(d['metascore']) - thickness; })
-          .outerRadius(function(d) { return y(d['metascore']); })
-          .startAngle(function(d) { return x(d.original_title); })
+          .innerRadius(function(d) { return y(d['met']) - thickness; })
+          .outerRadius(function(d) { return y(d['met']); })
+          .startAngle(function(d) { return x(d.original_title) + 2 * x.bandwidth() / 3; })
           .endAngle(function(d) { return x(d.original_title) + x.bandwidth(); })
           .padAngle(0.05)
           .padRadius(innerRadius))
@@ -97,7 +98,7 @@ d3.csv(moviepta, function(data) {
     .enter()
     .append("g")
     .attr("text-anchor", function(d) { return (x(d.original_title) + x.bandwidth() / 2 + Math.PI) % (2 * Math.PI) < Math.PI ? "end" : "start"; })
-    .attr("transform", function(d) { return "rotate(" + ((x(d.original_title) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")"+"translate(" + (y(d['avg_vote'])+10) + ",0)"; })
+    .attr("transform", function(d) { return "rotate(" + ((x(d.original_title) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")"+"translate(" + (y(d['avg_vote'])+labelOffset) + ",0)"; })
     .append("text")
     .text(function(d){return(d.original_title)})
     .attr("transform", function(d) { return (x(d.original_title) + x.bandwidth() / 2 + Math.PI) % (2 * Math.PI) < Math.PI ? "rotate(180)" : "rotate(0)"; })
