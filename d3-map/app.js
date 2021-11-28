@@ -13,8 +13,8 @@ d3.queue()
 )
 .await(ready);
 
-function ready(error, dataGeo, data){
-    console.log("dataGeo", dataGeo, "data", data);
+function ready(error, quake, map){
+    console.log("quake", quake, "map", map);
 }
 
 async function fetchQuakes(){
