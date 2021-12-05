@@ -81,6 +81,7 @@ function RadarChart(id, data, options, dir) {
 		.attr("r", function(d, i){return radius/cfg.levels*d;})
 		.style("fill", "#c5c5c5")
 		.style("stroke", "#c5c5c5")
+		.style("stroke-width", "0.5px")
 		.style("fill-opacity", cfg.opacityCircles)
 		.style("filter" , "url(#glow)");
 
@@ -120,7 +121,7 @@ function RadarChart(id, data, options, dir) {
 		.attr("y2", function(d, i){ return rScale(maxValue*1.1) * Math.sin(angleSlice*i - Math.PI/2); })
 		.attr("class", "line")
 		.style("stroke", "white")
-		.style("stroke-width", "0.5px");
+		.style("stroke-width", "0.3px");
 
 	//Append the labels at each axis
 	axis.append("text")
