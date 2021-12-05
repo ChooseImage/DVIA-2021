@@ -19,6 +19,12 @@
 
 		<div class="radarChart"></div>
     <div class="radarChart1"></div>
+    <div class="radarChart2"></div>
+    <div class="radarChart3"></div>
+    <div class="radarChart4"></div>
+    <div class="radarChart5"></div>
+    <div class="radarChart6"></div>
+    <div class="radarChart7"></div>
 
 		<script src="radar.js"></script>	
 		<script>
@@ -50,18 +56,6 @@
             {axis:"Interstellar",value:0.86},
             {axis:"Dunkirk",value:0.79},
             {axis:"Tenet",value:0.79}		
-					  ],[//Samsung
-						{axis:"Following",value:0.60},
-						{axis:"Memento",value:0.80},
-						{axis:"Insomnia",value:0.78},
-						{axis:"Batman Begins",value:0.70},
-						{axis:"The Prestige",value:0.66},
-						{axis:"The Dark Knight",value:0.84},
-						{axis:"Inception",value:0.74},
-						{axis:"The Dark Knight Rises",value:0.78},
-            {axis:"Interstellar",value:0.74},
-            {axis:"Dunkirk",value:0.94},
-            {axis:"Tenet",value:0.69}	
 					  ],[//Nokia Smartphone
 						{axis:"Following",value:0.68},
 						{axis:"Memento",value:0.82},
@@ -74,10 +68,59 @@
             {axis:"Interstellar",value:0.84},
             {axis:"Dunkirk",value:0.76},
             {axis:"Tenet",value:0.68}	
+					  ],[//Samsung
+						{axis:"Following",value:0.60},
+						{axis:"Memento",value:0.80},
+						{axis:"Insomnia",value:0.78},
+						{axis:"Batman Begins",value:0.70},
+						{axis:"The Prestige",value:0.66},
+						{axis:"The Dark Knight",value:0.84},
+						{axis:"Inception",value:0.74},
+						{axis:"The Dark Knight Rises",value:0.78},
+            {axis:"Interstellar",value:0.74},
+            {axis:"Dunkirk",value:0.94},
+            {axis:"Tenet",value:0.69}	
 					  ]
 					];
 
-          var moviedata = [
+    			var Lynch = [
+					  [//iPhone
+						{axis:"Eraserhead",value:0.74},
+						{axis:"The Elephant Man",value:0.81},
+						{axis:"Dune",value:0.65},
+						{axis:"Blue Velvet",value:0.77},
+						{axis:"Wild at Heart",value:0.72},
+						{axis:"Twin Peaks: Fire Walk with Me",value:0.73},
+						{axis:"Lost Highway",value:0.76},
+						{axis:"The Straight Story",value:0.80},
+            {axis:"Mulholland Dr.",value:0.80},
+            {axis:"Inland Empire",value:0.69}
+					  ],[//Nokia Smartphone
+						{axis:"Eraserhead",value:0.78},
+						{axis:"The Elephant Man",value:0.82},
+						{axis:"Dune",value:0.56},
+						{axis:"Blue Velvet",value:0.82},
+						{axis:"Wild at Heart",value:0.74},
+						{axis:"Twin Peaks: Fire Walk with Me",value:0.8},
+						{axis:"Lost Highway",value:0.78},
+						{axis:"The Straight Story",value:0.80},
+            {axis:"Mulholland Dr.",value:0.84},
+            {axis:"Inland Empire",value:0.74}
+					  ],[//Samsung
+						{axis:"Eraserhead",value:0.80},
+						{axis:"The Elephant Man",value:0.78},
+						{axis:"Dune",value:0.40},
+						{axis:"Blue Velvet",value:0.76},
+						{axis:"Wild at Heart",value:0.52},
+						{axis:"Twin Peaks: Fire Walk with Me",value:0.28},
+						{axis:"Lost Highway",value:0.52},
+						{axis:"The Straight Story",value:0.86},
+            {axis:"Mulholland Dr.",value:0.85},
+            {axis:"Inland Empire",value:0.73}
+					  ]
+					];
+
+          var PTA = [
 					  [//imdb
 						{axis:"Hard Eight",value:0.72},
 						{axis:"Boogie Nights",value:0.79},
@@ -87,15 +130,6 @@
 						{axis:"The Master",value:0.72},
 						{axis:"Inherent Vice",value:0.67},
 						{axis:"Phantom Thread",value:0.75}			
-					  ],[//met
-						{axis:"Hard Eight",value:0.78},
-						{axis:"Boogie Nights",value:0.85},
-						{axis:"Magnolia",value:0.77},
-						{axis:"Punch-Drunk Love",value:0.78},
-						{axis:"There Will Be Blood",value:0.93},
-						{axis:"The Master",value:0.86},
-						{axis:"Inherent Vice",value:0.81},
-						{axis:"Phantom Thread",value:0.9}
 					  ],[//let
 						{axis:"Hard Eight",value:0.72},
 						{axis:"Boogie Nights",value:0.84},
@@ -105,6 +139,79 @@
 						{axis:"The Master",value:0.80},
 						{axis:"Inherent Vice",value:0.72},
 						{axis:"Phantom Thread",value:0.8}
+					  ],[//met
+						{axis:"Hard Eight",value:0.78},
+						{axis:"Boogie Nights",value:0.85},
+						{axis:"Magnolia",value:0.77},
+						{axis:"Punch-Drunk Love",value:0.78},
+						{axis:"There Will Be Blood",value:0.93},
+						{axis:"The Master",value:0.86},
+						{axis:"Inherent Vice",value:0.81},
+						{axis:"Phantom Thread",value:0.9}
+					  ]
+					];
+
+          var EYang = [
+					  [//imdb
+						{axis:"Hai Tan De Yi Tian",value:0.75},
+						{axis:"Taipei Story",value:0.77},
+						{axis:"Terrorizers",value:0.78},
+						{axis:"Du Li Shi Dai",value:0.76},
+						{axis:"Ma Jiang",value:0.75},
+						{axis:"A brighter summer day",value:0.84},
+						{axis:"Yi Yi",value:0.82}			
+					  ],[//let
+						{axis:"Hai Tan De Yi Tian",value:0.80},
+						{axis:"Taipei Story",value:0.80},
+						{axis:"Terrorizers",value:0.82},
+						{axis:"Du Li Shi Dai",value:0.76},
+						{axis:"Ma Jiang",value:0.78},
+						{axis:"A brighter summer say",value:0.90},
+						{axis:"Yi Yi",value:0.88}
+					  ]
+					];
+
+          var AmyHeckerling = [
+					  [//imdb
+						{axis:"Fast Times at Ridgemont High",value:0.72},
+						{axis:"Johnny Dangerously",value:0.66},
+						{axis:"National Lampoon's European Vacation",value:0.62},
+						{axis:"Look Who's Talking",value:0.59},
+						{axis:"Clueless",value:0.68},
+						{axis:"Loser",value:0.53},
+						{axis:"Vamps",value:0.52}			
+					  ],[//let
+						{axis:"Fast Times at Ridgemont High",value:0.70},
+						{axis:"Johnny Dangerously",value:0.62},
+						{axis:"National Lampoon's European Vacation",value:0.56},
+						{axis:"Look Who's Talking",value:0.54},
+						{axis:"Clueless",value:0.76},
+						{axis:"Loser",value:0.48},
+						{axis:"Vamps",value:0.54}
+					  ],[//met
+						{axis:"Fast Times at Ridgemont High",value:0.61},
+						{axis:"Johnny Dangerously",value:0.54},
+						{axis:"National Lampoon's European Vacation",value:0.47},
+						{axis:"Look Who's Talking",value:0.51},
+						{axis:"Clueless",value:0.68},
+						{axis:"Loser",value:0.35},
+						{axis:"Vamps",value:0.57}
+					  ]
+					];
+
+          var MartinMcDonagh = [
+					  [//imdb
+						{axis:"In Bruges",value:0.79},
+						{axis:"Seven Psychopaths",value:0.72},
+						{axis:"Three Billboards Outside Ebbing, Missouri",value:0.82}		
+					  ],[//let
+						{axis:"In Bruges",value:0.80},
+						{axis:"Seven Psychopaths",value:0.72},
+						{axis:"Three Billboards Outside Ebbing, Missouri",value:0.80}
+					  ],[//met
+						{axis:"In Bruges",value:0.67},
+						{axis:"Seven Psychopaths",value:0.66},
+						{axis:"Three Billboards Outside Ebbing, Missouri",value:0.88}
 					  ]
 					];
 			////////////////////////////////////////////////////////////// 
@@ -112,7 +219,7 @@
 			////////////////////////////////////////////////////////////// 
 
 			var color = d3.scale.ordinal()
-				.range(["#EDC951","#CC333F","#00A0B0"]);
+				.range(["#EDC951","#00A0B0","#CC333F"]);
 				
 			var radarChartOptions = {
 			  w: width,
@@ -124,8 +231,12 @@
 			  color: color
 			};
 			//Call function to draw the Radar chart
-			RadarChart(".radarChart", Nolan, radarChartOptions, "Christopher Nolan");
-      RadarChart(".radarChart1", moviedata, radarChartOptions, "Paul Thomas Anderson");
+      RadarChart(".radarChart", PTA, radarChartOptions, "Paul Thomas Anderson");
+			RadarChart(".radarChart1", Lynch, radarChartOptions, "David Lynch");
+      RadarChart(".radarChart2", MartinMcDonagh, radarChartOptions, "Martin McDonagh");
+      RadarChart(".radarChart3", AmyHeckerling, radarChartOptions, "Amy Heckerling");
+      RadarChart(".radarChart4", Nolan, radarChartOptions, "Christopher Nolan");
+      RadarChart(".radarChart5", EYang, radarChartOptions, "Edward Yang");
       
 		</script>
 	</body>
