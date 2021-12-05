@@ -22,6 +22,10 @@ var svg1 = d3.select("#my_dataviz1")
   .append("g")
     .attr("transform", "translate(" + width / 2 + "," + ( height/2 )+ ")"); 
 
+    // Creating a variable for single movie with three ratings
+
+
+
 
 //https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/7_OneCatOneNum.csv
 const movie = "movieRating.csv";

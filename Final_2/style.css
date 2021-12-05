@@ -1,0 +1,37 @@
+body {
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+    fill: #eeeeee;
+    text-align: center;
+    /*text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;*/
+    cursor: default;
+}
+
+.legend {
+    font-family: 'Raleway', sans-serif;
+    fill: #dadada;
+}
+
+.legend1 {
+    font-family: 'Raleway', sans-serif;
+    fill: #c5c5c5;
+}
+
+.dir {
+    font-family: sans-serif;
+    fill: #f8f8f8;
+    font-size:26px;
+    font-weight: 900;
+    align-content: center;
+
+}
+
+.tooltip {
+background: rgb(235, 235, 235);
+font: 12px sans-serif;	
+    display: block;
+width: 60px;					
+height: 28px;		
+}

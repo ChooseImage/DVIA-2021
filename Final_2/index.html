@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/ >
+		<title>Smoothed D3.js Radar Chart</title>
+
+		<!-- Google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300" rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+
+		<!-- D3.js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+		
+
+	
+	</head>
+	<body>
+
+		<div class="radarChart"></div>
+    <div class="radarChart1"></div>
+
+		<script src="radar.js"></script>	
+		<script>
+      
+      /* Radar chart design created by Nadieh Bremer - VisualCinnamon.com */
+      
+			////////////////////////////////////////////////////////////// 
+			//////////////////////// Set-Up ////////////////////////////// 
+			////////////////////////////////////////////////////////////// 
+
+			var margin = {top: 100, right: 100, bottom: 100, left: 100},
+				width = Math.min(700, window.innerWidth - 10) - margin.left - margin.right,
+				height = Math.min(width, window.innerHeight - margin.top - margin.bottom - 20);
+					
+			////////////////////////////////////////////////////////////// 
+			////////////////////////// Data ////////////////////////////// 
+			////////////////////////////////////////////////////////////// 
+
+			var Nolan = [
+					  [//iPhone
+						{axis:"Following",value:0.75},
+						{axis:"Memento",value:0.84},
+						{axis:"Insomnia",value:0.72},
+						{axis:"Batman Begins",value:0.82},
+						{axis:"The Prestige",value:0.85},
+						{axis:"The Dark Knight",value:0.90},
+						{axis:"Inception",value:0.88},
+						{axis:"The Dark Knight Rises",value:0.84},
+            {axis:"Interstellar",value:0.86},
+            {axis:"Dunkirk",value:0.79},
+            {axis:"Tenet",value:0.79}		
+					  ],[//Samsung
+						{axis:"Following",value:0.60},
+						{axis:"Memento",value:0.80},
+						{axis:"Insomnia",value:0.78},
+						{axis:"Batman Begins",value:0.70},
+						{axis:"The Prestige",value:0.66},
+						{axis:"The Dark Knight",value:0.84},
+						{axis:"Inception",value:0.74},
+						{axis:"The Dark Knight Rises",value:0.78},
+            {axis:"Interstellar",value:0.74},
+            {axis:"Dunkirk",value:0.94},
+            {axis:"Tenet",value:0.69}	
+					  ],[//Nokia Smartphone
+						{axis:"Following",value:0.68},
+						{axis:"Memento",value:0.82},
+						{axis:"Insomnia",value:0.70},
+						{axis:"Batman Begins",value:0.76},
+						{axis:"The Prestige",value:0.82},
+						{axis:"The Dark Knight",value:0.88},
+						{axis:"Inception",value:0.84},
+						{axis:"The Dark Knight Rises",value:0.76},
+            {axis:"Interstellar",value:0.84},
+            {axis:"Dunkirk",value:0.76},
+            {axis:"Tenet",value:0.68}	
+					  ]
+					];
+
+          var moviedata = [
+					  [//imdb
+						{axis:"Hard Eight",value:0.72},
+						{axis:"Boogie Nights",value:0.79},
+						{axis:"Magnolia",value:0.8},
+						{axis:"Punch-Drunk Love",value:0.73},
+						{axis:"There Will Be Blood",value:0.82},
+						{axis:"The Master",value:0.72},
+						{axis:"Inherent Vice",value:0.67},
+						{axis:"Phantom Thread",value:0.75}			
+					  ],[//met
+						{axis:"Hard Eight",value:0.78},
+						{axis:"Boogie Nights",value:0.85},
+						{axis:"Magnolia",value:0.77},
+						{axis:"Punch-Drunk Love",value:0.78},
+						{axis:"There Will Be Blood",value:0.93},
+						{axis:"The Master",value:0.86},
+						{axis:"Inherent Vice",value:0.81},
+						{axis:"Phantom Thread",value:0.9}
+					  ],[//let
+						{axis:"Hard Eight",value:0.72},
+						{axis:"Boogie Nights",value:0.84},
+						{axis:"Magnolia",value:0.82},
+						{axis:"Punch-Drunk Love",value:0.8},
+						{axis:"There Will Be Blood",value:0.88},
+						{axis:"The Master",value:0.80},
+						{axis:"Inherent Vice",value:0.72},
+						{axis:"Phantom Thread",value:0.8}
+					  ]
+					];
+			////////////////////////////////////////////////////////////// 
+			//////////////////// Draw the Chart ////////////////////////// 
+			////////////////////////////////////////////////////////////// 
+
+			var color = d3.scale.ordinal()
+				.range(["#EDC951","#CC333F","#00A0B0"]);
+				
+			var radarChartOptions = {
+			  w: width,
+			  h: height,
+			  margin: margin,
+			  maxValue: 1,
+			  levels: 5,
+			  roundStrokes: true,
+			  color: color
+			};
+			//Call function to draw the Radar chart
+			RadarChart(".radarChart", Nolan, radarChartOptions, "Christopher Nolan");
+      RadarChart(".radarChart1", moviedata, radarChartOptions, "Paul Thomas Anderson");
+      
+		</script>
+	</body>
+</html>
