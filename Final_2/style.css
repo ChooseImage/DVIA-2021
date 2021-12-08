@@ -9,12 +9,16 @@ body {
     cursor: default;
 }
 
+.tooltip {
+    color:rgb(235, 235, 235);
+}
+
 .legend {
     font-family: 'Raleway', sans-serif;
     fill: #dadada;
 }
 
-.legend1 {
+.legend:hover {
     font-family: 'Raleway', sans-serif;
     fill: #c5c5c5;
 }

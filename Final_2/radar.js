@@ -132,7 +132,36 @@ function RadarChart(id, data, options, dir) {
 		.attr("x", function(d, i){ return rScale(maxValue * cfg.labelFactor) * Math.cos(angleSlice*i - Math.PI/2); })
 		.attr("y", function(d, i){ return rScale(maxValue * cfg.labelFactor) * Math.sin(angleSlice*i - Math.PI/2); })
 		.text(function(d){return d})
-		.call(wrap, cfg.wrapWidth);
+		.call(wrap, cfg.wrapWidth)
+		.on("mouseover", function(d,i) {
+			
+			console.log("mouseover");console.log(d)	
+			tooltip1
+
+				.transition().duration(200)
+				.style('opacity', 1);
+		})
+		.on("mouseout", function(){
+			tooltip1.transition().duration(200)
+				.style("opacity", 0);
+		});
+
+
+		var tooltip1 = axis
+		.append("div")
+		.attr("class", "tooltip")
+		.style("opacity", 0)
+		.text("a simple tooltip");
+
+	// axis
+	// 	.selectAll("div")
+	// 	  .data(data)
+	// 	.enter().append("div")
+	// 	  .style("width", function(d) { return x(d) + "px"; })
+	// 	  .text(function(d) { return d; })
+	// 	  .on("mouseover", function(d){tooltip.text(d); return tooltip.style("visibility", "visible");})
+	// 		.on("mousemove", function(){return tooltip.style("top", (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px");})
+	// 		.on("mouseout", function(){return tooltip.style("visibility", "hidden");});
 
 	/////////////////////////////////////////////////////////
 	///////////// Draw the radar chart blobs ////////////////
