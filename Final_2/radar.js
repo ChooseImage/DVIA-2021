@@ -32,16 +32,20 @@ function RadarChart(id, data, options, dir) {
 		Format = d3.format('%'),			 	//Percentage formatting
 		angleSlice = Math.PI * 2 / total;		//The width in radians of each "slice"
 
-	// var yearReleased = ({
-	// 	title: data[0].map(function(i, j){return (i.axis)},
-	// 	yearReleased: data[0].map(function(i, j){return (i.yearReleased)}))
-	// }
+	var yearReleased = (data[0].map(function(i, j){return (i.yearReleased)})),
+		total = yearReleased.length,					//The number of different axes
+		radius = Math.min(cfg.w/2, cfg.h/2), 	//Radius of the outermost circle
+		Format = d3.format('%'),			 	//Percentage formatting
+		angleSlice = Math.PI * 2 / total;		//The width in radians of each "slice";
+	
+
 	var axisData = {
 		title:data[0].map(function(i, j){return i.axis}),
 		year:data[0].map(function(i, j){return i.yearReleased})
 	};
 
-	console.log(axisData);
+
+	//console.log(yearReleased);
 
 		
 		//data[0].map(function(i, j){return (i.axis, i.yearReleased)}));	//Names of each axis
@@ -139,12 +143,16 @@ function RadarChart(id, data, options, dir) {
 		.append("g")
 		.attr("class", "axis");
 
-	// var axisYear = axisGrid.selectAll(".axisYear")
-	// 	.data(yearReleased)
-	// 	.enter()
-	// 	.append("g")
-	// 	.attr("class", "hide");
+	/////////////////////////////////////////////////////////
+	/////////////////// Work in Progress ////////////////////
+	/////////////////////////////////////////////////////////
 
+
+	var year = axisGrid.selectAll(".axisYear")
+		.data(yearReleased)
+		.enter()
+		.append("g")
+		.attr("class", "hide");
 		
 	//Append the lines
 	axis.append("line")
@@ -169,9 +177,11 @@ function RadarChart(id, data, options, dir) {
 
 	//Add hover effects
 
+	console.log(yearReleased)
 
-	axis.append("text")
+	year.append("text")
 		.attr("class", "hide")
+		.attr("class", "legend")
 		.style("font-size", "11px")
 		.attr("text-anchor", "middle")
 		.attr("dy", "0.35em")
@@ -181,8 +191,9 @@ function RadarChart(id, data, options, dir) {
 		.call(wrap, cfg.wrapWidth);
 
 
-///////////////////////////////////////////////////////////////////////////////////////////
-
+	/////////////////////////////////////////////////////////
+	/////////////////// Work in Progress ////////////////////
+	/////////////////////////////////////////////////////////
 
 
 
