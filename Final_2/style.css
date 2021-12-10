@@ -41,12 +41,12 @@ height: 28px;
 }
 
 .hide {
-    display: block;
-    background-color: black;
-    color: black;
+    /* display: none; */
+    opacity: 0%;
   }
 
 .legend:hover + .hide {
     display: block;
-    fill: #f8f8f8;
+    color: #f8f8f8;
+    opacity: 100%;
   }

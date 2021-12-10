@@ -184,7 +184,6 @@ function RadarChart(id, data, options, dir) {
 
 	year.append("text")
 		.attr("class", "hide")
-		.attr("class", "legend")
 		.style("font-size", "11px")
 		.attr("text-anchor", "middle")
 		.attr("dy", "0.35em")
