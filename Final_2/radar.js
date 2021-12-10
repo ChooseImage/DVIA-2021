@@ -15,6 +15,7 @@ function RadarChart(id, data, options, dir) {
 	 color: d3.scale.category10()	//Color function
 	};
 	
+
 	//Put all of the options into a variable called cfg
 	if('undefined' !== typeof options){
 	  for(var i in options){
@@ -30,7 +31,24 @@ function RadarChart(id, data, options, dir) {
 		radius = Math.min(cfg.w/2, cfg.h/2), 	//Radius of the outermost circle
 		Format = d3.format('%'),			 	//Percentage formatting
 		angleSlice = Math.PI * 2 / total;		//The width in radians of each "slice"
+
+	// var yearReleased = ({
+	// 	title: data[0].map(function(i, j){return (i.axis)},
+	// 	yearReleased: data[0].map(function(i, j){return (i.yearReleased)}))
+	// }
+		
+		//data[0].map(function(i, j){return (i.axis, i.yearReleased)}));	//Names of each axis
+		// total = yearReleased.length,					//The number of different axes
+		// radius = Math.min(cfg.w/1.9, cfg.h/1.9), 	//Radius of the outermost circle
+		// Format = d3.format('%'),			 	//Percentage formatting
+		// angleSlice = Math.PI * 2 / total;		//The width in radians of each "slice"
+
+	//console.log(yearReleased);
 	
+	var ratings = (data[1].map(function(i, j){return i.axis}));
+	
+	//console.log(ratings);
+
 	//Scale for the radius
 	var rScale = d3.scale.linear()
 		.range([0, radius])
@@ -113,6 +131,14 @@ function RadarChart(id, data, options, dir) {
 		.enter()
 		.append("g")
 		.attr("class", "axis");
+
+	// var axisYear = axisGrid.selectAll(".axisYear")
+	// 	.data(yearReleased)
+	// 	.enter()
+	// 	.append("g")
+	// 	.attr("class", "hide");
+
+		
 	//Append the lines
 	axis.append("line")
 		.attr("x1", 0)
@@ -132,19 +158,41 @@ function RadarChart(id, data, options, dir) {
 		.attr("x", function(d, i){ return rScale(maxValue * cfg.labelFactor) * Math.cos(angleSlice*i - Math.PI/2); })
 		.attr("y", function(d, i){ return rScale(maxValue * cfg.labelFactor) * Math.sin(angleSlice*i - Math.PI/2); })
 		.text(function(d){return d})
-		.call(wrap, cfg.wrapWidth)
-		.on("mouseover", function(d,i) {
-			
-			console.log("mouseover");console.log(d)	
-			tooltip1
+		.call(wrap, cfg.wrapWidth);
 
-				.transition().duration(200)
-				.style('opacity', 1);
-		})
-		.on("mouseout", function(){
-			tooltip1.transition().duration(200)
-				.style("opacity", 0);
-		});
+	//Add hover effects
+
+
+	axis.append("text")
+		.attr("class", "hide")
+		.style("font-size", "11px")
+		.attr("text-anchor", "middle")
+		.attr("dy", "0.35em")
+		.attr("x", function(d, i){ return rScale(maxValue * cfg.labelFactor) * Math.cos(angleSlice*i - Math.PI/2); })
+		.attr("y", function(d, i){ return rScale(maxValue * cfg.labelFactor) * Math.sin(angleSlice*i - Math.PI/2)-20; })
+		.text(function(d){return d})
+		.call(wrap, cfg.wrapWidth);
+
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+		// .on("mouseover", function(d,i) {
+			
+		// //	console.log("mouseover");
+		// 	console.log(d);
+
+		// 	tooltip1
+
+		// 		.transition().duration(200)
+		// 		.style('opacity', 1);
+		// })
+		// .on("mouseout", function(){
+		// 	tooltip1.transition().duration(200)
+		// 		.style("opacity", 0);
+		// });
 
 
 		var tooltip1 = axis
@@ -152,6 +200,8 @@ function RadarChart(id, data, options, dir) {
 		.attr("class", "tooltip")
 		.style("opacity", 0)
 		.text("a simple tooltip");
+
+
 
 	// axis
 	// 	.selectAll("div")

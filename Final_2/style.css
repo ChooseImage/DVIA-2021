@@ -20,7 +20,7 @@ body {
 
 .legend:hover {
     font-family: 'Raleway', sans-serif;
-    fill: #c5c5c5;
+    fill: #dadada;
 }
 
 .dir {
@@ -39,3 +39,14 @@ font: 12px sans-serif;
 width: 60px;					
 height: 28px;		
 }
+
+.hide {
+    display: none;
+    background-color: black;
+    color: black;
+  }
+
+.legend:hover + .hide {
+    display: block;
+    fill: #f8f8f8;
+  }
