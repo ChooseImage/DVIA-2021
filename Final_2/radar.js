@@ -36,6 +36,13 @@ function RadarChart(id, data, options, dir) {
 	// 	title: data[0].map(function(i, j){return (i.axis)},
 	// 	yearReleased: data[0].map(function(i, j){return (i.yearReleased)}))
 	// }
+	var axisData = {
+		title:data[0].map(function(i, j){return i.axis}),
+		year:data[0].map(function(i, j){return i.yearReleased})
+	};
+
+	console.log(axisData);
+
 		
 		//data[0].map(function(i, j){return (i.axis, i.yearReleased)}));	//Names of each axis
 		// total = yearReleased.length,					//The number of different axes
