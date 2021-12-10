@@ -41,7 +41,7 @@ height: 28px;
 }
 
 .hide {
-    display: none;
+    display: block;
     background-color: black;
     color: black;
   }

@@ -147,6 +147,10 @@ function RadarChart(id, data, options, dir) {
 	/////////////////// Work in Progress ////////////////////
 	/////////////////////////////////////////////////////////
 
+	console.log('allAxis')
+	console.log(allAxis)
+	console.log('yearReleased')
+	console.log(yearReleased)
 
 	var year = axisGrid.selectAll(".axisYear")
 		.data(yearReleased)
@@ -177,7 +181,6 @@ function RadarChart(id, data, options, dir) {
 
 	//Add hover effects
 
-	console.log(yearReleased)
 
 	year.append("text")
 		.attr("class", "hide")
