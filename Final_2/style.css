@@ -40,12 +40,12 @@ width: 60px;
 height: 28px;		
 }
 
-.hide {
-    /* display: none; */
-    opacity: 0%;
+.yearLabel {
+    display: none;
+   
   }
 
-.legend:hover + .hide {
+.legend:hover + .yearLabel {
     display: block;
     color: #f8f8f8;
     opacity: 100%;
