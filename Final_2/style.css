@@ -47,10 +47,10 @@ height: 28px;
    
   }
 
-.hide {
+/* .hide {
     display: none;
    
-  }
+  } */
 
 .legend:hover + .yearLabel {
     display: block;
