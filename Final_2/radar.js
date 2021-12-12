@@ -149,10 +149,10 @@ function RadarChart(id, data, options, dir) {
 	/////////////////// Work in Progress ////////////////////
 	/////////////////////////////////////////////////////////
 
-	console.log('allAxis')
-	console.log(allAxis)
-	console.log('yearReleased')
-	console.log(yearReleased)
+	//console.log()
+	// console.log(allAxis)
+	// console.log('yearReleased')
+	// console.log(yearReleased)
 
 	var year = axisGrid.selectAll(".axisYear")
 		.data(yearReleased)
@@ -248,12 +248,28 @@ function RadarChart(id, data, options, dir) {
 	if(cfg.roundStrokes) {
 		radarLine.interpolate("cardinal-closed");
 	}
-				
+
+	//Functions to calculate 
+	const averageRating = (data) => {
+		let count = 0;
+		let sum = 0;
+		for (let key in data){
+			if(data[key].hasOwnProperty("value")){
+				sum += data[key].value;
+				count += 1;
+			}
+		}
+		return (sum/count).toFixed(4)*100;
+	}
+
+	//console.log(averageRating(data[0]));
 	//Create a wrapper for the blobs	
 	var blobWrapper = g.selectAll(".radarWrapper")
 		.data(data)
 		.enter().append("g")
 		.attr("class", "radarWrapper");
+
+	console.log(data);
 			
 	//Append the backgrounds	
 	blobWrapper
@@ -271,13 +287,21 @@ function RadarChart(id, data, options, dir) {
 			d3.select(this)
 				.transition().duration(200)
 				.style("fill-opacity", 0.7);
+			
+			//Show platform when hover
 
 
 				blobWrapper.append("text")
-				.attr("class", "dir")
-				.attr("y",100)
+				.attr("class", "plat")
+				.attr("y",40)
 				.attr("text-anchor", "middle")
 				.text(sites[i]);
+
+				blobWrapper.append("text")
+				.attr("class", "plat")
+				.attr("y",80)
+				.attr("text-anchor", "middle")
+				.text(averageRating(data[i]));
 
 			// d3.select(this)
 			// 	.append("text")
