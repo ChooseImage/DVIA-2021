@@ -17,14 +17,51 @@
 	</head>
 	<body>
 
-		<div class="radarChart"></div>
     <div class="radarChart1"></div>
+	<br>
+	<br>
+	<br>
+	<br>
     <div class="radarChart2"></div>
+	<br>
+	<br>
+	<br>
+	<br>
     <div class="radarChart3"></div>
+	<br>
+	<br>
+	<br>
+	<br>
     <div class="radarChart4"></div>
+	<br>
+	<br>
+	<br>
+	<br>
+    <div class="radarChart5"></div>
+	<br>
+	<br>
+	<br>
+	<br>
+    <div class="radarChart6"></div>
+	<br>
+	<br>
+	<br>
+	<br>
+    <div class="radarChart7"></div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="radarChart8"></div>
+	<br>
+	<br>
+	<br>
+	<br>
+    <div class="radarChart9"></div>
+    <!-- <div class="radarChart10"></div>
     <div class="radarChart5"></div>
     <div class="radarChart6"></div>
-    <div class="radarChart7"></div>
+    <div class="radarChart7"></div> -->
 
 		<script src="radar.js"></script>	
 		<script>
@@ -107,7 +144,7 @@
             {axis:"Mulholland Dr.",value:0.84},
             {axis:"Inland Empire",value:0.74}
 					  ],[//Samsung
-						{axis:"Eraserhead",value:0.80},
+						{axis:"Eraserhead",value:0.87},
 						{axis:"The Elephant Man",value:0.78},
 						{axis:"Dune",value:0.40},
 						{axis:"Blue Velvet",value:0.76},
@@ -117,6 +154,118 @@
 						{axis:"The Straight Story",value:0.86},
             {axis:"Mulholland Dr.",value:0.85},
             {axis:"Inland Empire",value:0.73}
+					  ]
+					];
+
+				var Wes = [
+					  [//imdb
+						{axis:"Bottle Rocket",value:0.70, yearReleased:'1996'},
+						{axis:"Rushmore",value:0.77, yearReleased:'1998'},
+						{axis:"The Royal Tenenbaums",value:0.76, yearReleased:'2001'},
+						{axis:"The Life Aquatic with Steve Zissou",value:0.73, yearReleased:'2004'},
+						{axis:"The Darjeeling Limited",value:0.78, yearReleased:'2007'},{axis:"Fantastic Mr. Fox",value:0.79, yearReleased:'2009'},
+						{axis:"Moonrise Kingdom",value:0.80, yearReleased:'2012'},
+            			{axis:"The Grand Budapest Hotel",value:0.81, yearReleased:'2014'},
+            			{axis:"Isle of Dogs",value:0.79, yearReleased:'2018'}
+					  ],[//let
+						{axis:"Bottle Rocket",value:0.7},
+						{axis:"Rushmore",value:0.78},
+						{axis:"The Royal Tenenbaums",value:0.80},
+						{axis:"The Life Aquatic with Steve Zissou",value:0.76},
+						{axis:"Fantastic Mr. Fox",value:0.84},
+						{axis:"The Darjeeling Limited",value:0.74},
+						{axis:"Moonrise Kingdom",value:0.80},
+						{axis:"The Grand Budapest Hotel",value:0.84},
+						{axis:"Isle of Dogs",value:0.78}
+					  ],[//met
+						{axis:"Bottle Rocket",value:0.66},
+						{axis:"Rushmore",value:0.86},
+						{axis:"The Royal Tenenbaums",value:0.76},
+						{axis:"The Life Aquatic with Steve Zissou",value:0.62},
+						{axis:"Fantastic Mr. Fox",value:0.83},
+						{axis:"The Darjeeling Limited",value:0.67},
+						{axis:"Moonrise Kingdom",value:0.84},
+						{axis:"The Grand Budapest Hotel",value:0.88},
+						{axis:"Isle of Dogs",value:0.82}
+					  ]
+					];
+				var Wilder = [
+					  [//imdb
+						{axis:"Double Indemnity",value:0.83, yearReleased:'1944'},
+						{axis:"A Foreign Affair",value:0.73, yearReleased:'1948'},
+						{axis:"Ace in the Hole",value:0.81, yearReleased:'1951'},
+						{axis:"Stalag 17",value:0.80, yearReleased:'1953'},
+						{axis:"Sabrina",value:0.77, yearReleased:'1954'},
+						{axis:"Some Like It Hot",value:0.82, yearReleased:'1959'},
+						{axis:"The Apartment",value:0.83, yearReleased:'1960'},
+            			{axis:"One, Two, Three",value:0.79, yearReleased:'1961'},
+            			{axis:"Kiss Me, Stupid",value:0.70, yearReleased:'1964'},
+						{axis:"The Fortune Cookie",value:0.73, yearReleased:'1966'},
+						{axis:"The Front Page",value:0.73, yearReleased:'1974'}
+					  ],[//let
+						{axis:"Double Indemnity",value:0.84},
+						{axis:"A Foreign Affair",value:0.72},
+						{axis:"Ace in the Hole",value:0.84},
+						{axis:"Stalag 17",value:0.78},
+						{axis:"Sabrina",value:0.76},
+						{axis:"Some Like It Hot",value:0.82},
+						{axis:"The Apartment",value:0.86},
+						{axis:"One, Two, Three",value:0.78},
+						{axis:"Kiss Me, Stupid",value:0.68},
+						{axis:"The Fortune Cookie",value:0.7},
+						{axis:"The Front Page",value:0.72}
+					  ],[//met
+						{axis:"Double Indemnity",value:0.95},
+						{axis:"A Foreign Affair",value:0.75},
+						{axis:"Ace in the Hole",value:0.72},
+						{axis:"Stalag 17",value:0.84},
+						{axis:"Sabrina",value:0.72},
+						{axis:"Some Like It Hot",value:0.98},
+						{axis:"The Apartment",value:0.84},
+						{axis:"One, Two, Three",value:0.73},
+						{axis:"Kiss Me, Stupid",value:0.63},
+						{axis:"The Fortune Cookie",value:0.63},
+						{axis:"The Front Page",value:0.62}
+					  ]
+					];
+
+				var Kubrick = [
+					  [//imdb
+						{axis:"The Killing",value:0.84, yearReleased:'1956'},
+						{axis:"Paths of Glory",value:0.84, yearReleased:'1957'},
+						{axis:"Spartacus",value:0.79, yearReleased:'1960'},
+						{axis:"Lolita",value:0.76, yearReleased:'1962'},
+						{axis:"Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",value:0.84, yearReleased:'1964'},
+						{axis:"2001: A Space Odyssey",value:0.83, yearReleased:'1968'},
+						{axis:"A Clockwork Orange",value:0.83, yearReleased:'1971'},
+            			{axis:"Barry Lyndon",value:0.81, yearReleased:'1975'},
+            			{axis:"The Shining",value:0.84, yearReleased:'1980'},
+						{axis:"Full Metal Jacket",value:0.83, yearReleased:'1987'},
+						{axis:"Eyes Wide Shut",value:0.74, yearReleased:'1999'}
+					  ],[//let
+						{axis:"The Killing",value:0.78},
+						{axis:"Paths of Glory",value:0.86},
+						{axis:"Spartacus",value:0.74},
+						{axis:"Lolita",value:0.72},
+						{axis:"Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",value:0.84},
+						{axis:"2001: A Space Odyssey",value:0.86},
+						{axis:"A Clockwork Orange",value:0.82},
+						{axis:"Barry Lyndon",value:0.86},
+						{axis:"The Shining",value:0.86},
+						{axis:"Full Metal Jacket",value:0.82},
+						{axis:"Eyes Wide Shut",value:0.78}
+					  ],[//met
+						{axis:"The Killing",value:0.91},
+						{axis:"Paths of Glory",value:0.90},
+						{axis:"Spartacus",value:0.87},
+						{axis:"Lolita",value:0.79},
+						{axis:"Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",value:0.97},
+						{axis:"2001: A Space Odyssey",value:0.84},
+						{axis:"A Clockwork Orange",value:0.77},
+						{axis:"Barry Lyndon",value:0.89},
+						{axis:"The Shining",value:0.66},
+						{axis:"Full Metal Jacket",value:0.76},
+						{axis:"Eyes Wide Shut",value:0.68}
 					  ]
 					];
 
@@ -303,13 +452,16 @@
 			  color: color
 			};
 			//Call function to draw the Radar chart
-      RadarChart(".radarChart", PTA, radarChartOptions, "Paul Thomas Anderson");
-			RadarChart(".radarChart1", Lynch, radarChartOptions, "David Lynch");
-      RadarChart(".radarChart2", MartinMcDonagh, radarChartOptions, "Martin McDonagh");
-      RadarChart(".radarChart3", SpikeLee, radarChartOptions, "Spike Lee");
-      RadarChart(".radarChart4", Nolan, radarChartOptions, "Christopher Nolan");
-      RadarChart(".radarChart5", EYang, radarChartOptions, "Edward Yang");
-      RadarChart(".radarChart6", AmyHeckerling, radarChartOptions, "Amy Heckerling");
+      RadarChart(".radarChart1", PTA, radarChartOptions, "Paul Thomas Anderson");
+	  RadarChart(".radarChart2", Wilder, radarChartOptions, "Billy Wilder");
+	  RadarChart(".radarChart3", Kubrick, radarChartOptions, "Stanley Kubrick");
+	  RadarChart(".radarChart4", Wes, radarChartOptions, "Wes Anderson");
+	  RadarChart(".radarChart5", Lynch, radarChartOptions, "David Lynch");
+      RadarChart(".radarChart6", MartinMcDonagh, radarChartOptions, "Martin McDonagh");
+      RadarChart(".radarChart7", SpikeLee, radarChartOptions, "Spike Lee");
+      RadarChart(".radarChart8", Nolan, radarChartOptions, "Christopher Nolan");
+      RadarChart(".radarChart9", EYang, radarChartOptions, "Edward Yang");
+      RadarChart(".radarChart10", AmyHeckerling, radarChartOptions, "Amy Heckerling");
       
 		</script>
 	</body>
