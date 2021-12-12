@@ -249,7 +249,7 @@ function RadarChart(id, data, options, dir) {
 		radarLine.interpolate("cardinal-closed");
 	}
 
-	//Functions to calculate 
+	//Functions to calculate average
 	const averageRating = (data) => {
 		let count = 0;
 		let sum = 0;
@@ -259,7 +259,8 @@ function RadarChart(id, data, options, dir) {
 				count += 1;
 			}
 		}
-		return (sum/count).toFixed(4)*100;
+		let avg = (sum/count)*100
+		return avg.toFixed(2);
 	}
 
 	//console.log(averageRating(data[0]));
@@ -293,7 +294,7 @@ function RadarChart(id, data, options, dir) {
 
 				blobWrapper.append("text")
 				.attr("class", "plat")
-				.attr("y",40)
+				.attr("y",50)
 				.attr("text-anchor", "middle")
 				.text(sites[i]);
 
@@ -301,7 +302,7 @@ function RadarChart(id, data, options, dir) {
 				.attr("class", "plat")
 				.attr("y",80)
 				.attr("text-anchor", "middle")
-				.text(averageRating(data[i]));
+				.text("Average: " + averageRating(data[i]));
 
 			// d3.select(this)
 			// 	.append("text")
