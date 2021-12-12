@@ -153,10 +153,10 @@ function RadarChart(id, data, options, dir) {
 	console.log(yearReleased)
 
 	var year = axisGrid.selectAll(".axisYear")
-	// 	.data(yearReleased)
-	// 	.enter()
-	// 	.append("g")
-	// 	.attr("class", "hide");
+		.data(yearReleased)
+		.enter()
+		.append("g")
+		.attr("class", "hide");
 		
 	//Append the lines
 	axis.append("line")
@@ -179,31 +179,19 @@ function RadarChart(id, data, options, dir) {
 		.text(function(d){return d})
 		.call(wrap, cfg.wrapWidth);
 
+	//Add hover effects
 
-	axis.append("text")
-		.attr("class", "yearLabel")
+
+	year.append("text")
+		.attr("class", "hide")
+		.attr("class", "legend")
 		.style("font-size", "11px")
 		.attr("text-anchor", "middle")
 		.attr("dy", "0.35em")
 		.attr("x", function(d, i){ return rScale(maxValue * cfg.labelFactor) * Math.cos(angleSlice*i - Math.PI/2); })
-		.attr("y", function(d, i){ return rScale(maxValue * cfg.labelFactor) * Math.sin(angleSlice*i - Math.PI/2) - 20; })
-		.text(function(){return yearReleased})
+		.attr("y", function(d, i){ return rScale(maxValue * cfg.labelFactor) * Math.sin(angleSlice*i - Math.PI/2)-20; })
+		.text(function(d){return d})
 		.call(wrap, cfg.wrapWidth);
-
-		// .attr("class", "hide");
-
-	//Add hover effects
-
-
-	// year.append("text")
-	// 	.attr("class", "hide")
-	// 	.style("font-size", "11px")
-	// 	.attr("text-anchor", "middle")
-	// 	.attr("dy", "0.35em")
-	// 	.attr("x", function(d, i){ return rScale(maxValue * cfg.labelFactor) * Math.cos(angleSlice*i - Math.PI/2); })
-	// 	.attr("y", function(d, i){ return rScale(maxValue * cfg.labelFactor) * Math.sin(angleSlice*i - Math.PI/2)-20; })
-	// 	.text(function(d){return d})
-	// 	.call(wrap, cfg.wrapWidth);g
 
 
 	/////////////////////////////////////////////////////////

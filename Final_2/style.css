@@ -41,7 +41,7 @@ height: 28px;
 }
 
 .yearLabel {
-    display: none;
+    display: block;
    
   }
 
