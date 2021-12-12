@@ -9,6 +9,8 @@ body {
     cursor: default;
 }
 
+.radar
+
 .tooltip {
     color:rgb(235, 235, 235);
 }
@@ -42,6 +44,11 @@ height: 28px;
 
 .yearLabel {
     display: block;
+   
+  }
+
+.hide {
+    display: none;
    
   }
 

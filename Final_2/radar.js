@@ -15,6 +15,7 @@ function RadarChart(id, data, options, dir) {
 	 color: d3.scale.category10()	//Color function
 	};
 	
+	var sites = ["IMDB", "Letterboxd", "Metacritic"]
 
 	//Put all of the options into a variable called cfg
 	if('undefined' !== typeof options){
@@ -81,7 +82,8 @@ function RadarChart(id, data, options, dir) {
 	var g = svg.append("g")
 			.attr("transform", "translate(" + (cfg.w/2 + cfg.margin.left) + "," + (cfg.h/2 + cfg.margin.top) + ")");
 
-	
+	var g1 = svg.append("platform")
+	.attr("transform", "translate(" + (cfg.w/2 + cfg.margin.left) + "," + (cfg.h/2 + cfg.margin.top) + ")");
 	
 	/////////////////////////////////////////////////////////
 	////////// Glow filter for some extra pizzazz ///////////
@@ -269,9 +271,26 @@ function RadarChart(id, data, options, dir) {
 			//Bring back the hovered over blob
 			d3.select(this)
 				.transition().duration(200)
-				.style("fill-opacity", 0.7);	
+				.style("fill-opacity", 0.7);
+
+
+				blobWrapper.append("text")
+				.attr("class", "dir")
+				.attr("y",100)
+				.attr("text-anchor", "middle")
+				.text(sites[i]);
+
+			// d3.select(this)
+			// 	.append("text")
+			// 	.attr("y",7)
+			// 	.attr("text-anchor", "middle")
+			// 	.text(sites[i])
 		})
 		.on('mouseout', function(){
+			
+			blobWrapper.selectAll("text")
+			.transition().duration(200)
+			.style("fill-opacity", 0)
 			//Bring back all blobs
 			d3.selectAll(".radarArea")
 				.transition().duration(200)
