@@ -74,11 +74,12 @@ height: 28px;
   }
 
   .main-description p {
+      width:60%;
+      display:inline-block;
     font-size: 24px;
     font-weight: 900;
-    padding-right: 50%;
-    padding-left: 5%;
-    text-align: justify
+    text-align:justify;
+    padding-bottom: 5%;
   }
 
   .container {
@@ -90,7 +91,9 @@ height: 28px;
     align-content: center;
     text-align: center;
     margin: 2px;
-    display: none; /* Hidden by default */
+    display: none; 
+    padding-bottom: 6%;
+    /* opacity: 0; */
   }
   
   /* The "show" class is added to the filtered elements */
@@ -100,20 +103,30 @@ height: 28px;
   
   /* Style the buttons */
   .btn {
+    color:white;
     border: none;
-    outline: none;
-    padding: 12px 16px;
-    background-color: #f1f1f1;
+    outline: 1px solid white;
+    margin: 8px 4px;
+    padding: 8px 16px;
+    background-color: black;
     cursor: pointer;
+    border-radius:12px;
+    font-size:14px;
   }
   
   /* Add a light grey background on mouse-over */
   .btn:hover {
-    background-color: #ddd;
+    background-color: white;
+    color: black;
   }
   
   /* Add a dark background to the active button */
   .btn.active {
-    background-color: #666;
-    color: white;
+    background-color: white;
+    color: black;
+  }
+
+  #myBtnContainer{
+      width:45%;
+      display:inline-block;
   }
