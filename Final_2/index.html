@@ -17,23 +17,29 @@
 	</head>
 	<body>
 		<div class = 'main-description'>
-		<p>
-			This is a visualization exploring selected directors' works by comparing ratings across the following three different platforms:
-		</p>
-		<div id="myBtnContainer">
-			<button class="btn active" onclick="filterSelection('all')"> Show all</button>
-			<button class="btn" onclick="filterSelection('PTA')"> Paul Thomas Anderson</button>
-			<button class="btn" onclick="filterSelection('Wilder')"> Billy Wilder</button>
-			<button class="btn" onclick="filterSelection('Kubrick')"> Stanley Kubrick</button>
-			<button class="btn" onclick="filterSelection('Lynch')"> David Lynch</button>
-			<button class="btn" onclick="filterSelection('Wes')"> Wes Anderson</button>
-			<button class="btn" onclick="filterSelection('Martin')"> Martin McDonagh</button>
-			<button class="btn" onclick="filterSelection('Lee')"> Spike Lee</button>
-			<button class="btn" onclick="filterSelection('Nolan')"> Christopher Nolan</button>
-			<button class="btn" onclick="filterSelection('Yang')"> Edward Yang</button>
-			<button class="btn" onclick="filterSelection('Amy')"> Amy Heckerling</button>
-			<button class="btn" onclick="clearAll('all')"> Clear all</button>
-		  </div>
+			<p>
+				This is a visualization exploring selected directors' works by comparing ratings across the following three different platforms:
+			</p>
+			<div class = "plat">
+				<span id="IMDB">IMDB</span>
+				<span id="Meta">Metacritic</span>
+				<span id="Let">Letterboxd</span>
+			</div>
+			
+			<div id="myBtnContainer">
+				<button class="btn active" onclick="filterSelection('all')"> Show all</button>
+				<button class="btn" onclick="filterSelection('PTA')"> Paul Thomas Anderson</button>
+				<button class="btn" onclick="filterSelection('Wilder')"> Billy Wilder</button>
+				<button class="btn" onclick="filterSelection('Kubrick')"> Stanley Kubrick</button>
+				<button class="btn" onclick="filterSelection('Lynch')"> David Lynch</button>
+				<button class="btn" onclick="filterSelection('Wes')"> Wes Anderson</button>
+				<button class="btn" onclick="filterSelection('Martin')"> Martin McDonagh</button>
+				<button class="btn" onclick="filterSelection('Lee')"> Spike Lee</button>
+				<button class="btn" onclick="filterSelection('Nolan')"> Christopher Nolan</button>
+				<button class="btn" onclick="filterSelection('Yang')"> Edward Yang</button>
+				<button class="btn" onclick="filterSelection('Amy')"> Amy Heckerling</button>
+				<button class="btn" onclick="clearAll('all')"> Clear all</button>
+			</div>
 		</div>
 
 		

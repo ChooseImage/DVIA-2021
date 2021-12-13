@@ -79,8 +79,29 @@ height: 28px;
     font-size: 24px;
     font-weight: 900;
     text-align:justify;
-    padding-bottom: 5%;
+    margin-bottom:4%;
   }
+
+  .plat span{
+    width:60%;
+    font-size: 18px;
+    font-weight: 900;
+    padding:0.5% 3%; 
+    border-radius: 12px; 
+}
+
+    #IMDB{
+        border: 1px solid;
+        border-color: #EDC951;
+    }
+    #Meta{
+        border: 1px solid;
+        border-color: #CC333F;
+    }
+    #Let{
+        border: 1px solid;
+        border-color: #00A0B0;
+    }
 
   .container {
     overflow: hidden;
@@ -127,6 +148,7 @@ height: 28px;
   }
 
   #myBtnContainer{
+      margin-top:4%;
       width:45%;
       display:inline-block;
   }
