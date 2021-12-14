@@ -10,6 +10,7 @@ function filterSelection(c) {
   }
 }
 
+
 function clearAll(c){
     let x, i;
     x = document.getElementsByClassName("filterDiv");
@@ -38,10 +39,13 @@ function w3RemoveClass(element, name) {
   for (i = 0; i < arr2.length; i++) {
     while (arr1.indexOf(arr2[i]) > -1) {
       arr1.splice(arr1.indexOf(arr2[i]), 1);
+      //console.log("haha");
     }
   }
   element.className = arr1.join(" ");
 }
+
+
 
 // Add active class to the current control button (highlight it)
 var btnContainer = document.getElementById("myBtnContainer");
